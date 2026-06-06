@@ -1,0 +1,941 @@
+2026-05-15 18:28:03 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:03 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:03 +05:30:           ^^^^^^^
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:03 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:03 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:03 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:03 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:03 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:03 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:03 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:03 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: Node.js v26.1.0
+2026-05-15 18:28:03 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:03 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:03 +05:30:           ^^^^^^^
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:03 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:03 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:03 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:03 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:03 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:03 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:03 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:03 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: Node.js v26.1.0
+2026-05-15 18:28:03 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:03 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:03 +05:30:           ^^^^^^^
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:03 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:03 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:03 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:03 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:03 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:03 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:03 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:03 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: Node.js v26.1.0
+2026-05-15 18:28:03 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:03 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:03 +05:30:           ^^^^^^^
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:03 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:03 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:03 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:03 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:03 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:03 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:03 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:03 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: Node.js v26.1.0
+2026-05-15 18:28:03 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:03 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:03 +05:30:           ^^^^^^^
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:03 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:03 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:03 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:03 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:03 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:03 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:03 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:03 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: Node.js v26.1.0
+2026-05-15 18:28:03 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:03 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:03 +05:30:           ^^^^^^^
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:03 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:03 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:03 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:03 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:03 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:03 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:03 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:03 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: Node.js v26.1.0
+2026-05-15 18:28:03 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:03 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:03 +05:30:           ^^^^^^^
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:03 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:03 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:03 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:03 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:03 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:03 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:03 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:03 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:03 +05:30: 
+2026-05-15 18:28:03 +05:30: Node.js v26.1.0
+2026-05-15 18:28:04 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:04 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:04 +05:30:           ^^^^^^^
+2026-05-15 18:28:04 +05:30: 
+2026-05-15 18:28:04 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:04 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:04 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:04 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:04 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:04 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:04 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:04 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:04 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:04 +05:30: 
+2026-05-15 18:28:04 +05:30: Node.js v26.1.0
+2026-05-15 18:28:04 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:04 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:04 +05:30:           ^^^^^^^
+2026-05-15 18:28:04 +05:30: 
+2026-05-15 18:28:04 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:04 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:04 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:04 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:04 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:04 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:04 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:04 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:04 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:04 +05:30: 
+2026-05-15 18:28:04 +05:30: Node.js v26.1.0
+2026-05-15 18:28:04 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:28:04 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:28:04 +05:30:           ^^^^^^^
+2026-05-15 18:28:04 +05:30: 
+2026-05-15 18:28:04 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:28:04 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:04 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:04 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:04 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:04 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:04 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:04 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:04 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:04 +05:30: 
+2026-05-15 18:28:04 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:28:46 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:28:46 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:28:46 +05:30: ^
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:28:46 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:28:46 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:28:46 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:28:46 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:28:46 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:28:46 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:28:46 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:28:46 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:28:46 +05:30: 
+2026-05-15 18:28:46 +05:30: Node.js v26.1.0
+2026-05-15 18:29:47 +05:30: (node:7088) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:47 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:48 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:48 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:48 +05:30:           ^^^^^^^
+2026-05-15 18:29:48 +05:30: 
+2026-05-15 18:29:48 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:48 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:48 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:48 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:48 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:48 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:48 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:48 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:48 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:48 +05:30: 
+2026-05-15 18:29:48 +05:30: Node.js v26.1.0
+2026-05-15 18:29:48 +05:30: (node:5704) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:48 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:49 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:49 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:49 +05:30:           ^^^^^^^
+2026-05-15 18:29:49 +05:30: 
+2026-05-15 18:29:49 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:49 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:49 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:49 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:49 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:49 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:49 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:49 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:49 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:49 +05:30: 
+2026-05-15 18:29:49 +05:30: Node.js v26.1.0
+2026-05-15 18:29:49 +05:30: (node:14224) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:49 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:49 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:49 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:49 +05:30:           ^^^^^^^
+2026-05-15 18:29:49 +05:30: 
+2026-05-15 18:29:49 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:49 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:49 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:49 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:49 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:49 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:49 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:49 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:49 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:49 +05:30: 
+2026-05-15 18:29:49 +05:30: Node.js v26.1.0
+2026-05-15 18:29:50 +05:30: (node:11672) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:50 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:50 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:50 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:50 +05:30:           ^^^^^^^
+2026-05-15 18:29:50 +05:30: 
+2026-05-15 18:29:50 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:50 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:50 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:50 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:50 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:50 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:50 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:50 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:50 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:50 +05:30: 
+2026-05-15 18:29:50 +05:30: Node.js v26.1.0
+2026-05-15 18:29:51 +05:30: (node:9868) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:51 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:51 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:51 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:51 +05:30:           ^^^^^^^
+2026-05-15 18:29:51 +05:30: 
+2026-05-15 18:29:51 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:51 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:51 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:51 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:51 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:51 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:51 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:51 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:51 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:51 +05:30: 
+2026-05-15 18:29:51 +05:30: Node.js v26.1.0
+2026-05-15 18:29:51 +05:30: (node:7712) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:51 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:52 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:52 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:52 +05:30:           ^^^^^^^
+2026-05-15 18:29:52 +05:30: 
+2026-05-15 18:29:52 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:52 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:52 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:52 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:52 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:52 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:52 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:52 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:52 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:52 +05:30: 
+2026-05-15 18:29:52 +05:30: Node.js v26.1.0
+2026-05-15 18:29:52 +05:30: (node:1368) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:52 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:52 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:52 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:52 +05:30:           ^^^^^^^
+2026-05-15 18:29:52 +05:30: 
+2026-05-15 18:29:52 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:52 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:52 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:52 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:52 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:52 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:52 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:52 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:52 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:52 +05:30: 
+2026-05-15 18:29:52 +05:30: Node.js v26.1.0
+2026-05-15 18:29:53 +05:30: (node:9472) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:53 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:53 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:53 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:53 +05:30:           ^^^^^^^
+2026-05-15 18:29:53 +05:30: 
+2026-05-15 18:29:53 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:53 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:53 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:53 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:53 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:53 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:53 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:53 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:53 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:53 +05:30: 
+2026-05-15 18:29:53 +05:30: Node.js v26.1.0
+2026-05-15 18:29:54 +05:30: (node:9180) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:54 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:54 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:54 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:54 +05:30:           ^^^^^^^
+2026-05-15 18:29:54 +05:30: 
+2026-05-15 18:29:54 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:54 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:54 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:54 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:54 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:54 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:54 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:54 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:54 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:54 +05:30: 
+2026-05-15 18:29:54 +05:30: Node.js v26.1.0
+2026-05-15 18:29:54 +05:30: (node:5968) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+2026-05-15 18:29:54 +05:30: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-05-15 18:29:54 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:29:54 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:29:54 +05:30:           ^^^^^^^
+2026-05-15 18:29:54 +05:30: 
+2026-05-15 18:29:54 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:29:54 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:29:54 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:29:54 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:29:54 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:29:54 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:29:54 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:29:54 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:29:54 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:29:54 +05:30: 
+2026-05-15 18:29:54 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:56 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:56 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:56 +05:30: ^
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:56 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:56 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:56 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:56 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:56 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:56 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:56 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:56 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:56 +05:30: 
+2026-05-15 18:32:56 +05:30: Node.js v26.1.0
+2026-05-15 18:32:57 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:57 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:57 +05:30: ^
+2026-05-15 18:32:57 +05:30: 
+2026-05-15 18:32:57 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:57 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:57 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:57 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:57 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:57 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:57 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:57 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:57 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:57 +05:30: 
+2026-05-15 18:32:57 +05:30: Node.js v26.1.0
+2026-05-15 18:32:57 +05:30: C:\PROGRAM FILES\NODEJS\NPM.CMD:1
+2026-05-15 18:32:57 +05:30: :: Created by npm, please don't edit manually.
+2026-05-15 18:32:57 +05:30: ^
+2026-05-15 18:32:57 +05:30: 
+2026-05-15 18:32:57 +05:30: SyntaxError: Unexpected token ':'
+2026-05-15 18:32:57 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:32:57 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:32:57 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:32:57 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:32:57 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:32:57 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:32:57 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:32:57 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:32:57 +05:30: 
+2026-05-15 18:32:57 +05:30: Node.js v26.1.0
+2026-05-15 18:34:28 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:28 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:28 +05:30:           ^^^^^^^
+2026-05-15 18:34:28 +05:30: 
+2026-05-15 18:34:28 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:28 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:28 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:28 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:28 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:28 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:28 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:28 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:28 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:28 +05:30: 
+2026-05-15 18:34:28 +05:30: Node.js v26.1.0
+2026-05-15 18:34:29 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:29 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:29 +05:30:           ^^^^^^^
+2026-05-15 18:34:29 +05:30: 
+2026-05-15 18:34:29 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:29 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:29 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:29 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:29 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:29 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:29 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:29 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:29 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:29 +05:30: 
+2026-05-15 18:34:29 +05:30: Node.js v26.1.0
+2026-05-15 18:34:29 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:29 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:29 +05:30:           ^^^^^^^
+2026-05-15 18:34:29 +05:30: 
+2026-05-15 18:34:29 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:29 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:29 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:29 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:29 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:29 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:29 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:29 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:29 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:29 +05:30: 
+2026-05-15 18:34:29 +05:30: Node.js v26.1.0
+2026-05-15 18:34:30 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:30 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:30 +05:30:           ^^^^^^^
+2026-05-15 18:34:30 +05:30: 
+2026-05-15 18:34:30 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:30 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:30 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:30 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:30 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:30 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:30 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:30 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:30 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:30 +05:30: 
+2026-05-15 18:34:30 +05:30: Node.js v26.1.0
+2026-05-15 18:34:30 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:30 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:30 +05:30:           ^^^^^^^
+2026-05-15 18:34:30 +05:30: 
+2026-05-15 18:34:30 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:30 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:30 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:30 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:30 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:30 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:30 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:30 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:30 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:30 +05:30: 
+2026-05-15 18:34:30 +05:30: Node.js v26.1.0
+2026-05-15 18:34:31 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:31 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:31 +05:30:           ^^^^^^^
+2026-05-15 18:34:31 +05:30: 
+2026-05-15 18:34:31 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:31 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:31 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:31 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:31 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:31 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:31 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:31 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:31 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:31 +05:30: 
+2026-05-15 18:34:31 +05:30: Node.js v26.1.0
+2026-05-15 18:34:31 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:31 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:31 +05:30:           ^^^^^^^
+2026-05-15 18:34:31 +05:30: 
+2026-05-15 18:34:31 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:31 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:31 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:31 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:31 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:31 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:31 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:31 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:31 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:31 +05:30: 
+2026-05-15 18:34:31 +05:30: Node.js v26.1.0
+2026-05-15 18:34:31 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:31 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:31 +05:30:           ^^^^^^^
+2026-05-15 18:34:31 +05:30: 
+2026-05-15 18:34:31 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:31 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:31 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:31 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:31 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:31 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:31 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:31 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:31 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:31 +05:30: 
+2026-05-15 18:34:31 +05:30: Node.js v26.1.0
+2026-05-15 18:34:32 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:32 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:32 +05:30:           ^^^^^^^
+2026-05-15 18:34:32 +05:30: 
+2026-05-15 18:34:32 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:32 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:32 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:32 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:32 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:32 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:32 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:32 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:32 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:32 +05:30: 
+2026-05-15 18:34:32 +05:30: Node.js v26.1.0
+2026-05-15 18:34:32 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:34:32 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:34:32 +05:30:           ^^^^^^^
+2026-05-15 18:34:32 +05:30: 
+2026-05-15 18:34:32 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:34:32 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:34:32 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:34:32 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:34:32 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:34:32 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:34:32 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:34:32 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:34:32 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:34:32 +05:30: 
+2026-05-15 18:34:32 +05:30: Node.js v26.1.0
+2026-05-15 18:35:26 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:26 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:26 +05:30:           ^^^^^^^
+2026-05-15 18:35:26 +05:30: 
+2026-05-15 18:35:26 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:26 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:26 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:26 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:26 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:26 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:26 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:26 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:26 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:26 +05:30: 
+2026-05-15 18:35:26 +05:30: Node.js v26.1.0
+2026-05-15 18:35:27 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:27 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:27 +05:30:           ^^^^^^^
+2026-05-15 18:35:27 +05:30: 
+2026-05-15 18:35:27 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:27 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:27 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:27 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:27 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:27 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:27 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:27 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:27 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:27 +05:30: 
+2026-05-15 18:35:27 +05:30: Node.js v26.1.0
+2026-05-15 18:35:27 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:27 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:27 +05:30:           ^^^^^^^
+2026-05-15 18:35:27 +05:30: 
+2026-05-15 18:35:27 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:27 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:27 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:27 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:27 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:27 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:27 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:27 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:27 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:27 +05:30: 
+2026-05-15 18:35:27 +05:30: Node.js v26.1.0
+2026-05-15 18:35:28 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:28 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:28 +05:30:           ^^^^^^^
+2026-05-15 18:35:28 +05:30: 
+2026-05-15 18:35:28 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:28 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:28 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:28 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:28 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:28 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:28 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:28 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:28 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:28 +05:30: 
+2026-05-15 18:35:28 +05:30: Node.js v26.1.0
+2026-05-15 18:35:28 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:28 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:28 +05:30:           ^^^^^^^
+2026-05-15 18:35:28 +05:30: 
+2026-05-15 18:35:28 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:28 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:28 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:28 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:28 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:28 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:28 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:28 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:28 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:28 +05:30: 
+2026-05-15 18:35:28 +05:30: Node.js v26.1.0
+2026-05-15 18:35:29 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:29 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:29 +05:30:           ^^^^^^^
+2026-05-15 18:35:29 +05:30: 
+2026-05-15 18:35:29 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:29 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:29 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:29 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:29 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:29 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:29 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:29 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:29 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:29 +05:30: 
+2026-05-15 18:35:29 +05:30: Node.js v26.1.0
+2026-05-15 18:35:29 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:29 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:29 +05:30:           ^^^^^^^
+2026-05-15 18:35:29 +05:30: 
+2026-05-15 18:35:29 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:29 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:29 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:29 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:29 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:29 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:29 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:29 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:29 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:29 +05:30: 
+2026-05-15 18:35:29 +05:30: Node.js v26.1.0
+2026-05-15 18:35:29 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:29 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:29 +05:30:           ^^^^^^^
+2026-05-15 18:35:29 +05:30: 
+2026-05-15 18:35:29 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:29 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:29 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:29 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:29 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:29 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:29 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:29 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:29 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:29 +05:30: 
+2026-05-15 18:35:29 +05:30: Node.js v26.1.0
+2026-05-15 18:35:30 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:30 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:30 +05:30:           ^^^^^^^
+2026-05-15 18:35:30 +05:30: 
+2026-05-15 18:35:30 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:30 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:30 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:30 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:30 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:30 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:30 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:30 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:30 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:30 +05:30: 
+2026-05-15 18:35:30 +05:30: Node.js v26.1.0
+2026-05-15 18:35:30 +05:30: D:\AcompanyAi\frontend\node_modules\.bin\next:2
+2026-05-15 18:35:30 +05:30: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-05-15 18:35:30 +05:30:           ^^^^^^^
+2026-05-15 18:35:30 +05:30: 
+2026-05-15 18:35:30 +05:30: SyntaxError: missing ) after argument list
+2026-05-15 18:35:30 +05:30:     at wrapSafe (node:internal/modules/cjs/loader:1789:18)
+2026-05-15 18:35:30 +05:30:     at Module._compile (node:internal/modules/cjs/loader:1830:20)
+2026-05-15 18:35:30 +05:30:     at Object..js (node:internal/modules/cjs/loader:1996:10)
+2026-05-15 18:35:30 +05:30:     at Module.load (node:internal/modules/cjs/loader:1579:32)
+2026-05-15 18:35:30 +05:30:     at Module._load (node:internal/modules/cjs/loader:1381:12)
+2026-05-15 18:35:30 +05:30:     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+2026-05-15 18:35:30 +05:30:     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+2026-05-15 18:35:30 +05:30:     at node:internal/main/run_main_module:33:47
+2026-05-15 18:35:30 +05:30: 
+2026-05-15 18:35:30 +05:30: Node.js v26.1.0
+2026-05-15 18:37:25 +05:30: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-05-15 18:37:25 +05:30:  We detected multiple lockfiles and selected the directory of D:\AcompanyAi\package-lock.json as the root directory.
+2026-05-15 18:37:25 +05:30:  To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-05-15 18:37:25 +05:30:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+2026-05-15 18:37:25 +05:30:  Detected additional lockfiles: 
+2026-05-15 18:37:25 +05:30:    * D:\AcompanyAi\frontend\package-lock.json
+2026-05-15 18:37:25 +05:30: 
+2026-05-15 18:50:16 +05:30: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-05-15 18:50:16 +05:30:  We detected multiple lockfiles and selected the directory of D:\AcompanyAi\package-lock.json as the root directory.
+2026-05-15 18:50:16 +05:30:  To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-05-15 18:50:16 +05:30:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+2026-05-15 18:50:16 +05:30:  Detected additional lockfiles: 
+2026-05-15 18:50:16 +05:30:    * D:\AcompanyAi\frontend\package-lock.json
+2026-05-15 18:50:16 +05:30: 
+2026-05-15 18:56:11 +05:30: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-05-15 18:56:11 +05:30:  We detected multiple lockfiles and selected the directory of D:\AcompanyAi\package-lock.json as the root directory.
+2026-05-15 18:56:11 +05:30:  To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-05-15 18:56:11 +05:30:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+2026-05-15 18:56:11 +05:30:  Detected additional lockfiles: 
+2026-05-15 18:56:11 +05:30:    * D:\AcompanyAi\frontend\package-lock.json
+2026-05-15 18:56:11 +05:30: 
