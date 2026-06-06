@@ -1,6 +1,13 @@
+import {
+  Zap,
+  Palette,
+  CloudDownload,
+  ShieldCheck,
+} from "lucide-react";
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#050816] text-white relative overflow-hidden">
+   <div className="min-h-screen bg-black text-white relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
   <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-violet-600/20 rounded-full blur-[150px] animate-pulse"></div>
 
@@ -34,16 +41,18 @@ export default function Home() {
         </div>
 
         <div className="flex gap-5 items-center">
-        <button className="
-bg-white
+       <button className="
+bg-white/90
+backdrop-blur-xl
 text-black
-px-4
-py-2
+px-6
+py-2.5
 rounded-full
-text-sm
 font-semibold
-hover:bg-gray-100
+shadow-lg
+hover:scale-105
 transition-all
+duration-300
 ">
   Login
 </button>
@@ -52,26 +61,22 @@ transition-all
         </div>
       </nav>
 
-      {/* <div className="absolute top-20 left-20 text-violet-400 text-4xl animate-bounce">
- ✦
+      {<div className="absolute inset-0 -z-10 overflow-hidden">
+
+  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-violet-900/30 via-violet-800/20 to-[#050816]"></div>
+
+  <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-violet-600/20 rounded-full blur-[300px]"></div>
+
+  <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-purple-500/15 rounded-full blur-[250px]"></div>
+
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-blue-600/10 rounded-full blur-[300px]"></div>
+
+</div>}
+      <section className="relative flex flex-col items-center justify-center min-h-[75vh] text-center px-4 max-w-6xl mx-auto">
+        <div className="absolute inset-0 -z-10">
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-violet-600/20 rounded-full blur-[250px]"></div>
 </div>
-
-<div className="absolute top-60 right-32 text-pink-400 text-5xl animate-pulse">
- ✦
-</div>
-
-<div className="absolute bottom-20 left-1/3 text-blue-400 text-3xl animate-bounce">
- ✦
-</div>
-
-<div className="absolute top-40 right-1/4 text-violet-300 text-2xl animate-ping">
- •
-</div> */}
-      <section className="relative flex flex-col items-center justify-center text-center py-24 md:py-32 overflow-hidden px-4">
-
-        <div className="absolute w-[500px] h-[500px] bg-violet-600/20 blur-[150px] rounded-full"></div>
-
-        <h1 className="z-10 text-6xl md:text-[120px] font-black leading-none tracking-tight">
+       <h1 className="z-10 text-6xl md:text-[140px] font-black leading-none tracking-tight text-center mx-auto">
   <span className="text-white">
     Acompany
   </span>
@@ -79,10 +84,6 @@ transition-all
     AI
   </span>
 </h1>
-
-        <h2 className="mt-8 text-5xl font-bold bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 bg-clip-text text-transparent z-10">
-          Ai Powered by AcompanyAi
-        </h2>
 
        <p className="mt-8 text-gray-400 text-base md:text-xl max-w-3xl z-10 px-4">
           Create stunning posters, logos, banners and more with the power of AI.
@@ -113,28 +114,66 @@ transition-all
       </section>
 
       {/* Features */}
-      <section className="max-w-7xl mx-auto px-8 pb-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-         <h3 className="text-lg md:text-2xl font-bold">AI Powered</h3>
-          </div>
+      
+      <section className="max-w-7xl mx-auto px-4 md:px-8 mt-24 md:mt-32 pb-20">
+  <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden">
 
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold">Easy To Use</h3>
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-4">
 
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold">High Quality</h3>
-          </div>
-
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold">100% Safe</h3>
-          </div>
-
+      <div className="p-6 flex gap-4 items-start border-b md:border-b-0 md:border-r border-white/10">
+        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
+          <Zap className="w-6 h-6 text-violet-400" />
         </div>
-      </section>
+
+        <div>
+          <h3 className="font-semibold">AI Powered</h3>
+          <p className="text-sm text-gray-400">
+            Generate unique designs using advanced AI.
+          </p>
+        </div>
+      </div>
+
+      <div className="p-6 flex gap-4 items-start border-b md:border-b-0 md:border-r border-white/10">
+        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
+          <Palette className="w-6 h-6 text-violet-400" />
+        </div>
+
+        <div>
+          <h3 className="font-semibold">Easy To Use</h3>
+          <p className="text-sm text-gray-400">
+            Simple editor, drag & drop and done.
+          </p>
+        </div>
+      </div>
+
+      <div className="p-6 flex gap-4 items-start border-b md:border-b-0 md:border-r border-white/10">
+        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
+          <CloudDownload className="w-6 h-6 text-violet-400" />
+        </div>
+
+        <div>
+          <h3 className="font-semibold">High Quality</h3>
+          <p className="text-sm text-gray-400">
+            Download high-resolution designs instantly.
+          </p>
+        </div>
+      </div>
+
+      <div className="p-6 flex gap-4 items-start">
+        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
+          <ShieldCheck className="w-6 h-6 text-violet-400" />
+        </div>
+
+        <div>
+          <h3 className="font-semibold">100% Safe</h3>
+          <p className="text-sm text-gray-400">
+            Your data is secure and private.
+          </p>
+        </div>
+      </div>
 
     </div>
-  
-  );
+  </div>
+</section></div>
+);
 }
