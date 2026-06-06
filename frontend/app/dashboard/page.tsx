@@ -1,166 +1,91 @@
 export default function Dashboard() {
-  const tools = [
-    "AI Poster Maker",
-    "AI Banner Maker",
-    "AI Logo Maker",
-    "AI Invitation",
-  ];
-
   return (
-    <main className="min-h-screen bg-[#F6F5FF] pb-24">
-      
-      {/* Header */}
-      <div className="max-w-[430px] mx-auto px-5 pt-6">
+    <main className="min-h-screen bg-[#0B1020] text-white">
+      <div className="max-w-7xl mx-auto p-4 md:p-8">
 
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-gray-500 text-sm">
-              Welcome Back
-            </p>
+        {/* Header */}
+        <div className="flex items-center justify-between mb-10">
+          <h1 className="text-2xl font-bold">
+            Acompany<span className="text-violet-500">AI</span>
+          </h1>
 
-            <h1 className="text-2xl font-bold">
-              Prashant 👋
-            </h1>
-          </div>
+          <div className="flex items-center gap-3">
+            <button className="w-10 h-10 rounded-xl bg-[#131A2B]">
+              🔔
+            </button>
 
-          <div className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
-            P
+            <div className="w-10 h-10 rounded-full bg-violet-600 flex items-center justify-center font-bold">
+              P
+            </div>
           </div>
         </div>
 
-        {/* Credits Card */}
+        {/* Create Section */}
+        <div className="bg-[#131A2B] rounded-3xl p-6 md:p-8 border border-white/10">
 
-        <div className="mt-6 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl p-6 text-white shadow-xl">
-
-          <p className="text-sm opacity-80">
-            Free Plan
-          </p>
-
-          <h2 className="text-5xl font-bold mt-2">
-            10
+          <h2 className="text-3xl font-bold mb-2">
+            Create with AI
           </h2>
 
-          <p className="opacity-80">
-            Credits Remaining
+          <p className="text-slate-400 mb-6">
+            Turn your ideas into Posters, Logos, Banners & Invitations
           </p>
-
-          <button className="mt-5 bg-white text-purple-700 px-5 py-3 rounded-2xl font-semibold">
-            Upgrade Plan
-          </button>
-
-        </div>
-
-        {/* AI Prompt */}
-
-        <div className="mt-6 bg-white rounded-3xl p-5 shadow">
-
-          <h3 className="font-semibold text-lg">
-            What do you want to create?
-          </h3>
 
           <textarea
-            placeholder="Create a modern sweet shop banner..."
-            className="w-full mt-4 h-28 border rounded-2xl p-4 outline-none resize-none"
+            placeholder="Create a premium sweet shop opening banner..."
+            className="w-full h-40 rounded-2xl bg-[#0B1020] border border-white/10 p-4 outline-none resize-none"
           />
 
-          <button className="mt-4 w-full bg-purple-600 text-white py-4 rounded-2xl font-semibold">
-            Generate Design
+          <button className="mt-4 bg-violet-600 hover:bg-violet-700 px-8 py-3 rounded-xl font-semibold">
+            Generate
           </button>
 
         </div>
 
-        {/* AI Tools */}
-
+        {/* Quick Tools */}
         <div className="mt-8">
+          <h3 className="text-xl font-semibold mb-4">
+            Quick Tools
+          </h3>
 
-          <h2 className="text-xl font-bold mb-4">
-            AI Studio
-          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-          <div className="grid grid-cols-2 gap-4">
-
-            {tools.map((tool) => (
+            {[
+              "🎨 Poster",
+              "📢 Banner",
+              "🏷️ Logo",
+              "💌 Invitation",
+            ].map((item) => (
               <div
-                key={tool}
-                className="bg-white rounded-3xl p-5 shadow"
+                key={item}
+                className="bg-[#131A2B] rounded-2xl p-6 border border-white/10 hover:border-violet-500 transition"
               >
-                <div className="w-12 h-12 bg-purple-100 rounded-2xl mb-4"></div>
-
-                <h3 className="font-semibold">
-                  {tool}
-                </h3>
-
-                <p className="text-sm text-gray-500 mt-2">
-                  Create instantly
-                </p>
+                <p className="font-medium">{item}</p>
               </div>
             ))}
 
           </div>
-
         </div>
 
         {/* Recent Projects */}
-
         <div className="mt-8">
 
-          <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold">
-              Recent Projects
-            </h2>
+          <h3 className="text-xl font-semibold mb-4">
+            Recent Projects
+          </h3>
 
-            <button className="text-purple-600">
-              View All
-            </button>
-          </div>
+          <div className="bg-[#131A2B] rounded-3xl border border-white/10">
 
-          <div className="mt-4 flex gap-4 overflow-x-auto pb-2">
-
-            {[1, 2, 3].map((item) => (
-              <div
-                key={item}
-                className="min-w-[180px] bg-white rounded-3xl p-4 shadow"
-              >
-                <div className="h-28 rounded-2xl bg-purple-100"></div>
-
-                <h3 className="mt-3 font-semibold">
-                  Project {item}
-                </h3>
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-
-        {/* Statistics */}
-
-        <div className="mt-8">
-
-          <h2 className="text-xl font-bold mb-4">
-            Statistics
-          </h2>
-
-          <div className="grid grid-cols-2 gap-4">
-
-            <div className="bg-white rounded-3xl p-5 shadow">
-              <p className="text-gray-500">
-                Total Designs
-              </p>
-
-              <h3 className="text-3xl font-bold mt-2">
-                128
-              </h3>
+            <div className="p-5 border-b border-white/10">
+              Sweet Shop Banner
             </div>
 
-            <div className="bg-white rounded-3xl p-5 shadow">
-              <p className="text-gray-500">
-                Downloads
-              </p>
+            <div className="p-5 border-b border-white/10">
+              Meera Sweets Logo
+            </div>
 
-              <h3 className="text-3xl font-bold mt-2">
-                432
-              </h3>
+            <div className="p-5">
+              Opening Invitation Card
             </div>
 
           </div>
@@ -168,33 +93,6 @@ export default function Dashboard() {
         </div>
 
       </div>
-
-      {/* Bottom Navigation */}
-
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t">
-
-        <div className="max-w-[430px] mx-auto flex justify-around py-4">
-
-          <button className="text-purple-600 font-semibold">
-            Home
-          </button>
-
-          <button>
-            Studio
-          </button>
-
-          <button>
-            Projects
-          </button>
-
-          <button>
-            Profile
-          </button>
-
-        </div>
-
-      </div>
-
     </main>
   );
 }
