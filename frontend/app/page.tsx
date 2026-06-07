@@ -72,12 +72,12 @@ duration-300
   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-blue-600/10 rounded-full blur-[300px]"></div>
 
 </div>}
-      <section className="relative flex flex-col items-center justify-center min-h-[75vh] text-center px-4 max-w-6xl mx-auto">
+      <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-4 max-w-7xl mx-auto">
 
         <div className="absolute inset-0 -z-10">
   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-violet-600/20 rounded-full blur-[250px]"></div>
 </div>
-       <h1 className="z-10 text-6xl md:text-[140px] font-black leading-none tracking-tight text-center mx-auto">
+       <h1 className="mt-20 z-10 text-6xl md:text-[140px] font-black leading-none tracking-tight text-center mx-auto">
   <span className="text-white">
     Acompany
   </span>
@@ -116,7 +116,7 @@ duration-300
 
       {/* Features */}
       
-      <section className="max-w-7xl mx-auto px-4 md:px-8 mt-24 md:mt-32 pb-20">
+     <section className="max-w-7xl mx-auto px-4 md:px-8 -mt-24 pb-20">
   <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden">
 
     <div className="grid grid-cols-1 md:grid-cols-4">
