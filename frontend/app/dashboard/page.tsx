@@ -1,9 +1,16 @@
 "use client";
-
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Plus, Mic } from "lucide-react";
-export default function Dashboard() {
-  const [showProjects, setShowProjects] = useState(false);
+export default function Dashboard() {const [prompt, setPrompt] = useState("");
+
+const [messages, setMessages] = useState([
+  {
+    role: "assistant",
+    content: "Welcome to AcompanyAI ",
+  },
+]);
+  const [selectedImage, setSelectedImage] = useState<File | null>(null);
   return (
     
     <div className="min-h-screen text-white relative overflow-hidden">
@@ -74,9 +81,31 @@ duration-300
       px-4
       ">
 
-       <h1 className="text-4xl md:text-6xl font-black text-white">
+       <h1 className="text-2xl md:text-6xl font-black text-white">
   What can I help with today?
-</h1>
+</h1><div className="mt-8 max-w-4xl mx-auto space-y-4 px-4">
+
+  {messages.map((msg, index) => (
+    <div
+      key={index}
+      className={`
+
+      p-4
+      rounded-3xl
+
+      ${
+        msg.role === "user"
+          ? "ml-auto bg-violet-600 max-w-xl"
+          : "bg-white/5 backdrop-blur-xl border border-white/10 max-w-xl"
+      }
+
+      `}
+    >
+      {msg.content}
+    </div>
+  ))}
+
+</div>
         
         
       </div>
@@ -104,44 +133,65 @@ duration-300
         gap-4
         ">
 
-          
+          {selectedImage && (
+  <div className="mb-3 text-white">
+    Selected: {selectedImage.name}
+  </div>
+)}
 <label className="cursor-pointer">
+
   <input
     type="file"
     accept="image/*"
     className="hidden"
+    onChange={(e) => {
+      if (e.target.files?.[0]) {
+        setSelectedImage(e.target.files[0]);
+      }
+    }}
   />
 
   <div
     className="
-    
+    w-7
+    h-10
   
-    flex
-    items-center
-    justify-center
-    hover:bg-white/[0.08]
-    transition-all
-    duration-300
+    flex items-center justify-center
     "
   >
-    <Plus size={30
-
-    } />
+    <Plus size={35} />
   </div>
+
 </label>
           <input
-            placeholder="Ask AcompanyAI"
-            className="
-            flex-1
-            bg-transparent
-            outline-none
-            "
-          />
-<button
+  value={prompt}
+  onChange={(e) => setPrompt(e.target.value)}
+  placeholder="Ask AcompanyAI"
   className="
- "
->
-   <button
+  flex-1
+  bg-transparent
+  outline-none
+  text-white
+  "
+/>
+<button
+  onClick={() => {
+    if (!prompt.trim()) return;
+
+    setMessages([
+      ...messages,
+      {
+        role: "user",
+        content: prompt,
+      },
+      {
+        role: "assistant",
+        content: "AI response coming soon...",
+      },
+    ]);
+
+    setPrompt("");
+  }}
   className="
   px-5
   py-2
@@ -149,15 +199,10 @@ duration-300
   bg-white
   text-black
   font-semibold
-  hover:scale-105
-  transition-all
-  duration-300
   "
 >
   Send
 </button>
- 
-</button>       
         </div>
 
       </div>
