@@ -1,69 +1,163 @@
-export default function Dashboard() {
-  return (
-    <div className="min-h-screen bg-[#050816] text-white">
+"use client";
 
-      {/* Top Bar */}
-      <div className="flex items-center justify-between p-6">
-        <h1 className="text-3xl font-bold">
-          Acompany<span className="text-violet-400">AI</span>
+import { useState } from "react";
+import { Plus, Mic } from "lucide-react";
+export default function Dashboard() {
+  const [showProjects, setShowProjects] = useState(false);
+  return (
+    
+    <div className="min-h-screen text-white relative overflow-hidden">
+<div className="absolute inset-0 -z-10">
+<div className="absolute inset-0 -z-1000 bg-black"></div>
+ 
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-violet-500/5 rounded-full blur-[250px]"></div>
+
+  <div className="absolute bottom-0 right-0 w-[700px] h-[700px] bg-blue-500/5 rounded-full blur-[250px]"></div>
+
+</div>
+      {/* Header */}
+      <div className="flex items-center justify-between px-6 py-5">
+
+        <h1 className="text-3xl font-black">
+          Acompany
+          <span className="text-violet-400">AI</span>
         </h1>
 
-        <div className="flex gap-4">
-          <button className="w-12 h-12 rounded-full bg-white/10">
-            🔔
-          </button>
+      <button
+className="
+w-10
+h-10
+rounded-full
+bg-zinc-800
+border
+border-zinc-700
+text-white
+font-semibold
+hover:bg-zinc-700
+transition
+"
+>
+P
+</button>
 
-          <button className="w-12 h-12 rounded-full bg-violet-600">
-            P
-          </button>
-        </div>
       </div>
 
-      {/* Main Box */}
-      <div className="mx-6 mt-4 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
+      {/* Recent Projects */}
+      <div className="px-6">
 
-        <h2 className="text-5xl font-bold">
-          What's can I help with today?
-        </h2>
+        <button className="
 
-        <p className="mt-3 text-gray-400">
-          Posters, Logos, Banners & Invitations
-        </p>
+">
+         
+        </button>
+<button
+className="
+text-white
+text-2xl
+hover:text-blue-400
+transition-all
+duration-300
+"
+>
+☰
+</button>
+      </div>
 
-        {/* Glass Text Area */}
-        <div className="mt-8">
-          <textarea
-            placeholder="Ask AcompanyAI..."
+      {/* Center Content */}
+      <div className="
+      flex
+      flex-col
+      items-center
+      justify-center
+      text-center
+      mt-28
+      px-4
+      ">
+
+       <h1 className="text-4xl md:text-6xl font-black text-white">
+  What can I help with today?
+</h1>
+        
+        
+      </div>
+
+      {/* Bottom Glass Input */}
+      <div className="
+      fixed
+      bottom-8
+      left-1/2
+      -translate-x-1/2
+      w-[95%]
+      max-w-4xl
+      ">
+
+        <div className="
+       bg-white/[0.03]
+        backdrop-blur-2xl
+        border
+        border-white/5
+        rounded-full
+        px-6
+        py-4
+        flex
+        items-center
+        gap-4
+        ">
+
+          
+<label className="cursor-pointer">
+  <input
+    type="file"
+    accept="image/*"
+    className="hidden"
+  />
+
+  <div
+    className="
+    
+  
+    flex
+    items-center
+    justify-center
+    hover:bg-white/[0.08]
+    transition-all
+    duration-300
+    "
+  >
+    <Plus size={30
+
+    } />
+  </div>
+</label>
+          <input
+            placeholder="Ask AcompanyAI"
             className="
-            w-full
-            h-52
-            rounded-3xl
-            bg-white/5
-            border border-white/10
-            backdrop-blur-xl
-            p-6
-            text-white
+            flex-1
+            bg-transparent
             outline-none
             "
           />
-        </div>
-
-        {/* Bottom Input */}
-        <div className="mt-6 flex items-center justify-between rounded-full border border-white/10 bg-white/5 backdrop-blur-xl px-6 py-4">
-
-          <button className="text-2xl">
-            +
-          </button>
-
-          <input
-            placeholder="Ask AcompanyAI"
-            className="bg-transparent flex-1 mx-4 outline-none"
-          />
-
-          <button>
-            🎤
-          </button>
-
+<button
+  className="
+ "
+>
+   <button
+  className="
+  px-5
+  py-2
+  rounded-full
+  bg-white
+  text-black
+  font-semibold
+  hover:scale-105
+  transition-all
+  duration-300
+  "
+>
+  Send
+</button>
+ 
+</button>       
         </div>
 
       </div>

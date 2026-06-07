@@ -92,7 +92,7 @@ export default function Home() {
         </p>
 
         <a
-   href="/dashboard">
+  href="/dashboard"
   className="
   mt-10
   px-12
@@ -108,6 +108,7 @@ export default function Home() {
   transition-all
   duration-300
   "
+>
   Start Free
 </a>
       </section>
