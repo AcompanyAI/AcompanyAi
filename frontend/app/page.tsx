@@ -33,30 +33,31 @@ export default function Home() {
 </h1>
 
         <div className="hidden md:flex gap-10 text-gray-300">
-          <a href="#">Features</a>
-          <a href="#">Templates</a>
-          <a href="#">Pricing</a>
-          <a href="#">Blog</a>
-          <a href="#">About</a>
+          <a href="#features">Features</a>
+<a href="/templates">Templates</a>
+<a href="/pricing">Pricing</a>
+<a href="/about">About</a>
         </div>
 
         <div className="flex gap-5 items-center">
-       <button className="
-bg-white/90
-backdrop-blur-xl
-text-black
-px-6
-py-2.5
-rounded-full
-font-semibold
-shadow-lg
-hover:scale-105
-transition-all
-duration-300
-">
+       <a
+  href="/login"
+  className="
+  bg-white/90
+  backdrop-blur-xl
+  text-black
+  px-6
+  py-2.5
+  rounded-full
+  font-semibold
+  shadow-lg
+  hover:scale-105
+  transition-all
+  duration-300
+  "
+>
   Login
-</button>
-
+</a>
         
         </div>
       </nav>
@@ -90,32 +91,30 @@ duration-300
           Ai Powered by AcompanyAi
         </p>
 
-        <button
+        <a
+  href="/dashboard"
   className="
   mt-10
-  px-7
-  py-2.5
-  rounded-xl
-  text-base
+  px-12
+  py-4
+  rounded-2xl
+  text-lg
   font-semibold
   text-white
   bg-white/5
   backdrop-blur-xl
-  border
-  border-white/20
-  shadow-[0_0_20px_rgba(139,92,246,0.25)]
+  border border-white/20
   hover:bg-white/10
   transition-all
   duration-300
   "
 >
   Start Free
-</button>
-
+</a>
       </section>
 
       {/* Features */}
-      
+     <section id="features"></section> 
      <section className="max-w-7xl mx-auto px-4 md:px-8 -mt-24 pb-20">
   <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden">
 
