@@ -73,6 +73,7 @@ duration-300
 
 </div>}
       <section className="relative flex flex-col items-center justify-center min-h-[75vh] text-center px-4 max-w-6xl mx-auto">
+
         <div className="absolute inset-0 -z-10">
   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-violet-600/20 rounded-full blur-[250px]"></div>
 </div>
@@ -86,7 +87,7 @@ duration-300
 </h1>
 
        <p className="mt-8 text-gray-400 text-base md:text-xl max-w-3xl z-10 px-4">
-          Create stunning posters, logos, banners and more with the power of AI.
+          Ai Powered by AcompanyAi
         </p>
 
         <button
