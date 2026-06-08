@@ -27,3 +27,6 @@ body {
 body {
   font-family: system-ui, sans-serif;
 }
+.hero-font {
+  font-family: Inter, Poppins, sans-serif;
+}

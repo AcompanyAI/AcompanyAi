@@ -1,25 +1,78 @@
 "use client";
-import { Menu } from "lucide-react";
 import { useState } from "react";
-import { Plus, Mic } from "lucide-react";
-export default function Dashboard() {const [prompt, setPrompt] = useState("");
+import { Menu, Plus, Mic } from "lucide-react";
+export default function Dashboard()
 
-const [messages, setMessages] = useState([
-  {
-    role: "assistant",
-    content: "Welcome to AcompanyAI ",
-  },
-]);
-  const [selectedImage, setSelectedImage] = useState<File | null>(null);
+ {const [prompt, setPrompt] = useState("");
+const welcomeMessages = [
+  "Your move, Prashant.",
+  "What's on your mind today?",
+  "How can AcompanyAI help?",
+  "Ready to create something great?",
+  "Let's build something amazing.",
+  "Need a logo, banner or brand kit?",
+  "Start with an idea.",
+  "What would you like to create?",
+];
+
+const [heroText] = useState(
+  welcomeMessages[
+    Math.floor(Math.random() * welcomeMessages.length)
+  ]
+);
+const [messages, setMessages] = useState<any[]>([]);
+
+const [selectedImage, setSelectedImage] = useState<File | null>(null);
+
+const [loading, setLoading] = useState(false);
+
+  const themes = [
+  "black",
+  "blue",
+  "gradient",
+  "blackblue",
+];
+
+const [theme] = useState(
+  themes[Math.floor(Math.random() * themes.length)]
+);
   return (
     
     <div className="min-h-screen text-white relative overflow-hidden">
 <div className="absolute inset-0 -z-10">
-<div className="absolute inset-0 -z-1000 bg-black"></div>
- 
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-violet-500/5 rounded-full blur-[250px]"></div>
 
-  <div className="absolute bottom-0 right-0 w-[700px] h-[700px] bg-blue-500/5 rounded-full blur-[250px]"></div>
+  {theme === "black" && (
+  <div className="absolute inset-0 bg-black"></div>
+)}
+
+{theme === "blue" && (
+  <div className="absolute inset-0 bg-[#07111f]"></div>
+)}
+
+{theme === "gradient" && (
+  <div className="absolute inset-0 bg-gradient-to-br from-violet-900 via-black to-blue-900"></div>
+)}
+
+{theme === "blackblue" && (
+  <>
+    <div className="absolute inset-0 bg-black"></div>
+
+    <div
+      className="
+      absolute
+      left-1/2
+      top-1/2
+      -translate-x-1/2
+      -translate-y-1/2
+      w-[1000px]
+      h-[600px]
+      bg-blue-600/10
+      rounded-full
+      blur-[220px]
+      "
+    ></div>
+  </>
+)}
 
 </div>
       {/* Header */}
@@ -81,9 +134,30 @@ duration-300
       px-4
       ">
 
-       <h1 className="text-2xl md:text-6xl font-black text-white">
-  What can I help with today?
-</h1><div className="mt-8 max-w-4xl mx-auto space-y-4 px-4">
+       {messages.length === 0 && (
+  <h1
+  className="
+  hero font
+  text-2xl
+  md:text-5xl
+  font-light
+  tracking-tight
+  text-white/90
+  "
+>
+   {heroText}
+  </h1>
+)}
+<div
+  className="
+  mt-8
+  max-w-5xl
+  mx-auto
+  space-y-6
+  px-4
+  pb-40
+  "
+>
 
   {messages.map((msg, index) => (
     <div
@@ -95,8 +169,8 @@ duration-300
 
       ${
         msg.role === "user"
-          ? "ml-auto bg-violet-600 max-w-xl"
-          : "bg-white/5 backdrop-blur-xl border border-white/10 max-w-xl"
+? "ml-auto bg-white text-black max-w-2xl"
+: "mr-auto bg-white/5 backdrop-blur-3xl border border-white/10 max-w-2xl"
       }
 
       `}
@@ -104,7 +178,28 @@ duration-300
       {msg.content}
     </div>
   ))}
-
+{loading && (
+  <div
+    className="
+    inline-flex
+    items-center
+    gap-1
+    px-1.5
+    py-3
+    mt-4
+    "
+  >
+    <span className="w-2 h-2 rounded-full bg-white animate-bounce"></span>
+    <span
+      className="w-2 h-2 rounded-full bg-white animate-bounce"
+      style={{ animationDelay: "0.15s" }}
+    ></span>
+    <span
+      className="w-2 h-2 rounded-full bg-white animate-bounce"
+      style={{ animationDelay: "0.3s" }}
+    ></span>
+  </div>
+)}
 </div>
         
         
@@ -175,22 +270,48 @@ duration-300
   "
 />
 <button
-  onClick={() => {
+  onClick={async () => {
     if (!prompt.trim()) return;
+
+    const userMessage = prompt;
 
     setMessages([
       ...messages,
       {
         role: "user",
-        content: prompt,
-      },
-      {
-        role: "assistant",
-        content: "AI response coming soon...",
+        content: userMessage,
       },
     ]);
 
     setPrompt("");
+
+    try { 
+      setLoading(true);
+      const res = await fetch("http://127.0.0.1:8000/chat");
+
+      const data = await res.json();
+await new Promise((resolve) =>
+  setTimeout(resolve, 2500)
+);
+
+setLoading(false);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: data.reply,
+        },
+      ]);
+    } catch (error) { 
+      setLoading(false);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: "Backend connection failed",
+        },
+      ]);
+    }
   }}
   className="
   px-5
