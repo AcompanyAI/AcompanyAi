@@ -25,7 +25,14 @@ const [messages, setMessages] = useState<any[]>([]);
 const [selectedImage, setSelectedImage] = useState<File | null>(null);
 
 const [loading, setLoading] = useState(false);
+const [showProjects, setShowProjects] = useState(false);
 
+const [projects] = useState([
+  "Logo Design",
+  "Brand Kit",
+  "Banner Design",
+  "AI Chat",
+]);
   const themes = [
   "black",
   "blue",
@@ -43,6 +50,10 @@ const [theme] = useState(
 
   {theme === "black" && (
   <div className="absolute inset-0 bg-black"></div>
+)}
+
+ {theme === "white" && (
+  <div className="absolute inset-0 bg-white"></div>
 )}
 
 {theme === "blue" && (
@@ -104,6 +115,60 @@ P
 
       {/* Recent Projects */}
       <div className="px-6">
+     {showProjects && (
+  <>
+    <div
+      onClick={() => setShowProjects(false)}
+      className="
+      fixed
+      inset-0
+      bg-black/40
+      z-40
+      "
+    ></div>
+
+    <div
+    className="
+fixed
+left-0
+top-0
+h-screen
+w-72
+bg-black/90
+backdrop-blur-xl
+border-r
+border-white/10
+p-5
+z-50
+transition-all
+duration-300
+animate-[slideIn_.3s_ease]
+"
+  >
+    <h2 className="text-xl font-semibold mb-6">
+      Recent Projects
+    </h2>
+
+    <div className="space-y-3">
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className="
+          p-3
+          rounded-xl
+          bg-white/5
+          hover:bg-white/10
+          cursor-pointer
+          transition-all
+          "
+        >
+          {project}
+        </div>
+      ))}
+    </div>
+   </div>
+  </>
+)}
 
         <button className="
 
@@ -111,15 +176,16 @@ P
          
         </button>
 <button
-className="
-text-white
-text-2xl
-hover:text-blue-400
-transition-all
-duration-300
-"
+  onClick={() => setShowProjects(!showProjects)}
+  className="
+  text-white
+  text-2xl
+  hover:text-blue-400
+  transition-all
+  duration-300
+  "
 >
-☰
+  ☰
 </button>
       </div>
 

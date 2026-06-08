@@ -30,3 +30,12 @@ body {
 .hero-font {
   font-family: Inter, Poppins, sans-serif;
 }
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
