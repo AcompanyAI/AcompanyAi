@@ -33,9 +33,10 @@ const [projects] = useState([
   "Banner Design",
   "AI Chat",
 ]);
-  const themes = [
+const themes = [
   "black",
   "blue",
+  "orange",
   "gradient",
   "blackblue",
 ];
@@ -48,16 +49,33 @@ const [theme] = useState(
     <div className="min-h-screen text-white relative overflow-hidden">
 <div className="absolute inset-0 -z-10">
 
-  {theme === "black" && (
-  <div className="absolute inset-0 bg-black"></div>
-)}
-
- {theme === "white" && (
-  <div className="absolute inset-0 bg-white"></div>
-)}
-
 {theme === "blue" && (
   <div className="absolute inset-0 bg-[#07111f]"></div>
+)}
+
+{theme === "orange" && (
+  <>
+    <div className="absolute inset-0 bg-[#1a0d00]"></div>
+
+    <div
+      className="
+      absolute
+      left-1/2
+      top-1/2
+      -translate-x-1/2
+      -translate-y-1/2
+      w-[1000px]
+      h-[600px]
+      bg-orange-500/20
+      rounded-full
+      blur-[220px]
+      "
+    ></div>
+  </>
+)}
+
+  {theme === "black" && (
+  <div className="absolute inset-0 bg-black"></div>
 )}
 
 {theme === "gradient" && (
