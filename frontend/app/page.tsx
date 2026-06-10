@@ -41,7 +41,7 @@ export default function Home() {
 
         <div className="flex gap-5 items-center">
        <a
-  href="/login"
+ href="/signup"
   className="
   bg-white/90
   backdrop-blur-xl
@@ -56,7 +56,7 @@ export default function Home() {
   duration-300
   "
 >
-  Login
+  Start Free
 </a>
         
         </div>
@@ -92,7 +92,7 @@ export default function Home() {
         </p>
 
         <a
-  href="/dashboard"
+  href="/login"
   className="
   mt-10
   px-12
@@ -109,7 +109,7 @@ export default function Home() {
   duration-300
   "
 >
-  Start Free
+ Login
 </a>
       </section>
 

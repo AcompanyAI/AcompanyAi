@@ -1,6 +1,19 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Menu, Plus, Mic } from "lucide-react";
+
+import {
+  Menu,
+  Plus,
+  ArrowUp,
+  PenSquare,
+  Search,
+  Library,
+  FolderKanban,
+  Grid3X3,
+  Code2,
+  MoreHorizontal,
+} from "lucide-react";
+
 export default function Dashboard()
 
  {const [prompt, setPrompt] = useState("");
@@ -23,7 +36,7 @@ const [heroText] = useState(
 );
 const [messages, setMessages] = useState<any[]>([]);
 
-const [selectedImage, setSelectedImage] = useState<File | null>(null);
+const [selectedImages, setSelectedImages] = useState<File[]>([]);
 
 const [loading, setLoading] = useState(false);
 const [showProjects, setShowProjects] = useState(false);
@@ -59,7 +72,7 @@ const [theme] = useState(
 );
   return (
     
-    <div className="min-h-screen text-white relative overflow-hidden">
+  <div className="min-h-screen text-black dark:text-white relative overflow-hidden">
 <div className="absolute inset-0 -z-10">
 
 {theme === "blue" && (
@@ -223,66 +236,206 @@ P
     ></div>
 
     <div
-    className="
+className="
 fixed
 left-0
 top-0
 h-screen
-w-72
-bg-black/90
-backdrop-blur-xl
+w-[260px]
+bg-[#f7f7f7]
 border-r
-border-white/10
-p-5
+border-gray-200
+pt-2
+px-3
 z-50
-transition-all
-duration-300
-animate-[slideIn_.3s_ease]
+shadow-sm
 "
+>
+
+<div className="flex items-center justify-between mb-4">
+
+  <button
+    onClick={() => setShowProjects(false)}
+    className="
+    w-10
+    h-10
+    rounded-lg
+    hover:bg-black/5
+    flex
+    items-center
+    justify-center
+    transition-all
+    "
   >
-    <div className="mb-6">
+    <Menu size={20} />
+  </button>
+
+</div>
+
+    <div className="mb-8">
 
 <button
+
   onClick={() => {
     setMessages([]);
     setShowProjects(false);
   }}
   className="
-  w-full
-  mb-4
-  p-3
-  rounded-xl
-  bg-white
-  text-black
-  font-semibold
-  hover:scale-[1.02]
-  transition-all
-  "
+w-full
+flex
+items-center
+gap-4
+px-3
+py-2.5
+rounded-xl
+hover:bg-black/10
+transition-all
+text-black
+"
 >
-  + New Chat
+  <>
+  <PenSquare size={20} />
+  <span>New chat</span> 
+</>
+
 </button>
 
-  <h2 className="text-xl font-semibold">
-    Recent Projects
-  </h2>
+<div className="space-y-1 mb-6 text-black">
 
-  <p className="text-sm text-white/50 mt-1">
-    {projects.length} Chats
-  </p>
+ <button
+  className="
+  w-full
+  flex
+  items-center
+  gap-4
+  px-3
+  py-2.5
+  rounded-xl
+  hover:bg-black/10
+  transition-all
+  text-black
+  "
+>
+  <Search size={20} />
+  <span>Search chats</span>
+</button>
+
+ <button
+  className="
+  w-full
+  flex
+  items-center
+  gap-4
+  px-3
+  py-2.5
+  rounded-xl
+  hover:bg-black/10
+  transition-all
+  text-black
+  "
+>
+  <Library size={20} />
+  <span>Library</span>
+</button>
+
+<button
+  className="
+  w-full
+  flex
+  items-center
+  gap-4
+  px-3
+  py-2.5
+  rounded-xl
+  hover:bg-black/10
+  transition-all
+  text-black
+  "
+>
+  <FolderKanban size={20} />
+  <span>Projects</span>
+</button>
+
+  <button
+  className="
+  w-full
+  flex
+  items-center
+  gap-4
+  px-3
+  py-2.5
+  rounded-xl
+  hover:bg-b/10
+  transition-all
+  text-black
+  "
+>
+  <Grid3X3 size={20} />
+  <span>Apps</span>
+</button>
+
+<button
+  className="
+  w-full
+  flex
+  items-center
+  gap-4
+  px-3
+  py-2.5
+  rounded-xl
+  hover:bg-black/10
+  transition-all
+  text-black
+  "
+>
+  <Code2 size={20} />
+  <span>Codex</span>
+</button>
+
+<button
+  className="
+  w-full
+  flex
+  items-center
+  gap-4
+  px-3
+  py-2.5
+  rounded-xl
+  hover:bg-/10
+  transition-all
+  text-black
+  "
+>
+  <MoreHorizontal size={20} />
+  <span>More</span>
+</button>
+
+</div>
+
+  <h2 className="text-sm font-semibold text-black mb-4">
+  Recents
+</h2>
+
 </div>
 
     <div className="space-y-3">
       {projects.map((project, index) => (
         <div
           key={index}
-          className="
-          p-3
-          rounded-xl
-          bg-white/5
-          hover:bg-white/10
-          cursor-pointer
-          transition-all
-          "
+        className="
+w-full
+text-left
+px-4
+py-4
+mb-2
+rounded-2xl
+bg-[#1f1f1f]
+hover:bg-[#2a2a2a]
+text-white
+transition-all
+duration-200
+truncate
+"
         >
           {project}
         </div>
@@ -292,11 +445,6 @@ animate-[slideIn_.3s_ease]
   </>
 )}
 
-        <button className="
-
-">
-         
-        </button>
 <button
   onClick={() => setShowProjects(!showProjects)}
   className="
@@ -390,7 +538,6 @@ animate-[slideIn_.3s_ease]
 )}
 </div>
         
-        
       </div>
 
       {/* Bottom Glass Input */}
@@ -413,100 +560,100 @@ animate-[slideIn_.3s_ease]
         py-4
         flex
         items-center
-        gap-4
+        gap-1
         ">
 
-          {selectedImage && (
-  <div className="mb-3 text-white">
-    Selected: {selectedImage.name}
-  </div>
-)}
-<label className="cursor-pointer">
-
-  <input
-    type="file"
-    accept="image/*"
-    className="hidden"
-    onChange={(e) => {
-      if (e.target.files?.[0]) {
-        setSelectedImage(e.target.files[0]);
-      }
-    }}
-  />
-
-  <div
-    className="
-    w-7
-    h-10
-  
-    flex items-center justify-center
-    "
-  >
-    <Plus size={35} />
-  </div>
-
-</label>
-{selectedImage && (
+         {selectedImages.length > 0 && (
   <div
    className="
-mb-4
 flex
-items-center
+flex-wrap
 gap-3
-bg-white/5
-backdrop-blur-xl
-border
-border-white/10
-rounded-2xl
-p-3
-w-fit
-shadow-lg
+mb-4
 "
   >
-    <img
-      src={URL.createObjectURL(selectedImage)}
-      alt="preview"
-      className="
-w-14
-h-14
-object-cover
-rounded-xl
-"
-    />
-<div className="flex flex-col">
-  <span className="text-sm text-white">
-    {selectedImage.name}
-  </span>
+    {selectedImages.map((image, index) => (
+      <div
+        key={index}
+        className="relative"
+      >
+        <img
+          src={URL.createObjectURL(image)}
+          alt="preview"
+          className="
+          w-20
+          h-20
+          rounded-xl
+          object-cover
+          "
+        />
 
-  <span className="text-xs text-white/50">
-    Image Ready
-  </span>
-</div>
-
-    <button
-    
-      onClick={() => setSelectedImage(null)}
-      className="text-red-400 text-sm"
-    >
-      ✕
-    </button>
+        <button
+          onClick={() =>
+            setSelectedImages(
+              selectedImages.filter(
+                (_, i) => i !== index
+              )
+            )
+          }
+          className="
+          absolute
+          -top-1
+          -right-1
+          w-5
+          h-5
+          rounded-full
+          bg-black
+          text-white
+          text-xs
+          "
+        >
+          ✕
+        </button>
+      </div>
+    ))}
   </div>
 )}
+
+<label className="cursor-pointer shrink-0 mr-2">
+
+  <input
+  type="file"
+  accept="image/*"
+  multiple
+    className="hidden"
+   onChange={(e) => {
+  const files = Array.from(e.target.files || []);
+
+  if (files.length > 0) {
+    setSelectedImages((prev) => [
+      ...prev,
+      ...files,
+    ].slice(0, 5));
+  }
+}}
+  />
+  <div
+  >
+    <label className="cursor-pointer shrink-0"></label>
+    <Plus size={35} />
+  </div>
+</label>
+
           <input
-  value={prompt}
-  onChange={(e) => setPrompt(e.target.value)}
   placeholder="Ask AcompanyAI"
   className="
   flex-1
-  bg-transparent
-  outline-none
-  text-white
+  text-2xl
+  pl-0
   "
 />
 <button
   onClick={async () => {
+     console.log("SEND CLICKED");
+     
     if (!prompt.trim()) return;
-
+ 
     const userMessage = prompt;
 setProjects((prev) => {
   if (prev.includes(userMessage)) return prev;
@@ -531,8 +678,7 @@ return [title, ...prev].slice(0, 10);
 
     try { 
       setLoading(true);
-      const res = await fetch("http://127.0.0.1:8000/chat");
-
+     const res = await fetch("http://127.0.0.1:5000/chat");
       const data = await res.json();
 await new Promise((resolve) =>
   setTimeout(resolve, 2500)
@@ -557,16 +703,19 @@ setLoading(false);
       ]);
     }
   }}
+
   className="
-  px-5
-  py-2
-  rounded-full
-  bg-white
-  text-black
-  font-semibold
-  "
->
-  Send
+w-15
+h-15
+rounded-full
+bg-black
+text-white
+flex
+items-center
+justify-center
+"
+><ArrowUp size={30} />
+  
 </button>
         </div>
 
