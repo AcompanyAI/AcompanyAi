@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import {
   Menu,
   Plus,
+  Mic,
   ArrowUp,
   PenSquare,
   Search,
@@ -14,9 +15,11 @@ import {
   MoreHorizontal,
 } from "lucide-react";
 
-export default function Dashboard()
+import SpeechRecognition from "react-speech-recognition";
+import { useSpeechRecognition } from "react-speech-recognition";
 
- {const [prompt, setPrompt] = useState("");
+export default function Dashboard() {
+  const [prompt, setPrompt] = useState("");
   
 const welcomeMessages = [
   "Your move, Prashant.",
@@ -29,11 +32,32 @@ const welcomeMessages = [
   "What would you like to create?",
 ];
 
-const [heroText] = useState(
-  welcomeMessages[
-    Math.floor(Math.random() * welcomeMessages.length)
-  ]
-);
+const themes = [
+  "black",
+  "blue",
+  "orange",
+  "gradient",
+  "blackblue",
+  "navyblack",
+];
+
+const [theme, setTheme] = useState("black");
+const [heroText, setHeroText] = useState("");
+
+useEffect(() => {
+  setTheme(
+    themes[
+      Math.floor(Math.random() * themes.length)
+    ]
+  );
+
+  setHeroText(
+    welcomeMessages[
+      Math.floor(Math.random() * welcomeMessages.length)
+    ]
+  );
+}, []);
+
 const [messages, setMessages] = useState<any[]>([]);
 
 const [selectedImages, setSelectedImages] = useState<File[]>([]);
@@ -43,7 +67,67 @@ const [showProjects, setShowProjects] = useState(false);
 
 const [projects, setProjects] = useState<string[]>([]);
 
+const startVoiceAssistant = () => {
+  useEffect(() => {
+  const text = transcript.toLowerCase();
+
+  if (text.includes("hey acompany ai")) {
+    const speech = new SpeechSynthesisUtterance(
+      "Hello Prashant, how can I help you today?"
+    );
+
+    window.speechSynthesis.speak(speech);
+
+    resetTranscript();
+  }
+}, [transcript]);
+  SpeechRecognition.startListening({
+    continuous: true,
+    language: "en-US",
+  });
+
+  const speech = new SpeechSynthesisUtterance(
+    "Acompany AI is now listening"
+  );
+
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.volume = 1;
+
+  window.speechSynthesis.speak(speech);
+};
+
+const {
+  transcript,
+  listening,
+  resetTranscript,
+} = useSpeechRecognition();
+
 useEffect(() => {
+
+  const speak = (text: string) => {
+  window.speechSynthesis.cancel();
+
+  const utterance = new SpeechSynthesisUtterance(text);
+
+  utterance.rate = 1;
+  utterance.pitch = 1;
+  utterance.volume = 1;
+
+  window.speechSynthesis.speak(utterance);
+};
+
+const startVoiceAssistant = () => {
+  resetTranscript();
+
+  SpeechRecognition.startListening({
+    continuous: true,
+    language: "en-US",
+  });
+
+  speak("Acompany AI is now listening");
+};
+
   const savedProjects = localStorage.getItem("projects");
 
   if (savedProjects) {
@@ -58,21 +142,31 @@ useEffect(() => {
   );
 }, [projects]);
 
-const themes = [
-  "black",
-  "blue",
-  "orange",
-  "gradient",
-  "blackblue",
-  "navyblack",
-];
+const speak = (text: string) => {
+  window.speechSynthesis.cancel();
 
-const [theme] = useState(
-  themes[Math.floor(Math.random() * themes.length)]
-);
+  const utterance = new SpeechSynthesisUtterance(text);
+
+  utterance.rate = 1;
+  utterance.pitch = 1;
+  utterance.volume = 1;
+
+  window.speechSynthesis.speak(utterance);
+};
+
+useEffect(() => {
+  const text = transcript.toLowerCase();
+
+  if (text.includes("hey acompany ai")) {
+    speak("Hello Prashant, how can I help you today?");
+    resetTranscript();
+  }
+
+}, [transcript]);
+
   return (
     
-  <div className="min-h-screen text-black dark:text-white relative overflow-hidden">
+  <div className="min-h-screen text-black relative overflow-hidden">
 <div className="absolute inset-0 -z-10">
 
 {theme === "blue" && (
@@ -186,8 +280,8 @@ const [theme] = useState(
       {/* Header */}
       <div className="flex items-center justify-between px-6 py-5">
 
-        <h1 className="text-3xl font-black text-white">
-  Acompany
+        <h1 className="text-3xl font-white text-White">
+
   <span
     className="
     bg-gradient-to-r
@@ -537,55 +631,42 @@ truncate
   </div>
 )}
 </div>
-        
-      </div>
+</div>
 
-      {/* Bottom Glass Input */}
-      <div className="
-      fixed
-      bottom-8
-      left-1/2
-      -translate-x-1/2
-      w-[95%]
-      max-w-4xl
-      ">
-
-        <div className="
-       bg-white/[0.03]
-        backdrop-blur-2xl
-        border
-        border-white/5
-        rounded-full
-        px-6
-        py-4
-        flex
-        items-center
-        gap-1
-        ">
-
-         {selectedImages.length > 0 && (
-  <div
+  {selectedImages.length > 0 && (
+    <div
    className="
+fixed
+bottom-[95px]
+left-1/2
+-translate-x-1/2
+w-[95%]
+max-w-4xl
 flex
-flex-wrap
-gap-3
-mb-4
+gap-0
+overflow-x-auto
+z-50
 "
   >
     {selectedImages.map((image, index) => (
+
+
       <div
         key={index}
-        className="relative"
+        className="
+relative
+shrink-0
+"
       >
-        <img
-          src={URL.createObjectURL(image)}
-          alt="preview"
-          className="
-          w-20
-          h-20
-          rounded-xl
-          object-cover
-          "
+       <img
+  src={URL.createObjectURL(image)}
+  alt="preview"
+  className="
+ w-40
+h-20
+  rounded-full
+  object-cover
+  "
         />
 
         <button
@@ -600,8 +681,8 @@ mb-4
           absolute
           -top-1
           -right-1
-          w-5
-          h-5
+          w-8
+          h-8
           rounded-full
           bg-black
           text-white
@@ -614,6 +695,29 @@ mb-4
     ))}
   </div>
 )}
+
+      {/* Bottom Glass Input */}
+      <div className="
+      fixed
+      bottom-8
+      left-1/2
+      -translate-x-1/2
+      w-[95%]
+      max-w-4xl
+      ">
+
+       <div className="
+bg-white
+border
+border-gray-200
+rounded-full
+px-4
+h-[64px]
+flex
+items-center
+gap-0
+shadow-xl
+">
 
 <label className="cursor-pointer shrink-0 mr-2">
 
@@ -636,36 +740,56 @@ mb-4
   <div
   >
     <label className="cursor-pointer shrink-0"></label>
-    <Plus size={35} />
+    
+  <Plus
+  size={32}
+  strokeWidth={1.5}
+  className="text-gray-1000"
+/>
+
   </div>
 </label>
-
-          <input
-  placeholder="Ask AcompanyAI"
-  className="
-  flex-1
-  text-2xl
-  pl-0
-  "
+<input
+  value={prompt}
+  onChange={(e) => setPrompt(e.target.value)}
+ placeholder={
+  listening
+    ? "Listening..."
+    : "Ask AcompanyAI"
+}
+ className="
+flex-1
+pr-2
+bg-white
+text-black
+text-[18px]
+md:text-[20px]
+font-normal
+tracking-tight
+outline-none
+placeholder:text-gray-500
+"
 />
+{prompt.trim() ? (
+
 <button
   onClick={async () => {
-     console.log("SEND CLICKED");
-     
+
     if (!prompt.trim()) return;
- 
+
     const userMessage = prompt;
-setProjects((prev) => {
-  if (prev.includes(userMessage)) return prev;
 
- const title =
-  userMessage.length > 25
-    ? userMessage.slice(0, 25) + "..."
-    : userMessage;
+    setProjects((prev) => {
+      if (prev.includes(userMessage)) return prev;
 
-return [title, ...prev].slice(0, 10);
+      const title =
+        userMessage.length > 25
+          ? userMessage.slice(0, 25) + "..."
+          : userMessage;
 
-});
+      return [title, ...prev].slice(0, 10);
+    });
+
     setMessages([
       ...messages,
       {
@@ -676,15 +800,14 @@ return [title, ...prev].slice(0, 10);
 
     setPrompt("");
 
-    try { 
+    try {
       setLoading(true);
-     const res = await fetch("http://127.0.0.1:5000/chat");
-      const data = await res.json();
-await new Promise((resolve) =>
-  setTimeout(resolve, 2500)
-);
 
-setLoading(false);
+      const res = await fetch("http://127.0.0.1:5000/chat");
+      const data = await res.json();
+
+      setLoading(false);
+
       setMessages((prev) => [
         ...prev,
         {
@@ -692,8 +815,9 @@ setLoading(false);
           content: data.reply,
         },
       ]);
-    } catch (error) { 
+    } catch {
       setLoading(false);
+
       setMessages((prev) => [
         ...prev,
         {
@@ -705,18 +829,79 @@ setLoading(false);
   }}
 
   className="
-w-15
-h-15
-rounded-full
-bg-black
-text-white
+  w-11
+  h-11
+  rounded-full
+  bg-black
+  text-white
+  flex
+  items-center
+  justify-center
+  "
+>
+  <ArrowUp size={25} />
+</button>
+
+) : (
+
+<button
+  onClick={startVoiceAssistant}
+ className="
+ ml-auto
+w-[50px]
+h-11
 flex
 items-center
-justify-center
+justify-end
+pr-0
+shrink-0
 "
-><ArrowUp size={30} />
-  
+>
+ <div
+  className="
+  relative
+  z-10
+  w-11
+  h-11
+  rounded-full
+  bg-black
+  flex
+  items-center
+  justify-center
+  "
+>
+ <svg
+  width="70"
+  height="24"
+  viewBox="0 0 120 40"
+  className={listening ? "animate-pulse" : ""}
+>
+  <defs>
+    <linearGradient id="voiceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#8122ee" />
+      <stop offset="50%" stopColor="#f3dc0e" />
+      <stop offset="100%" stopColor="#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <path
+    d="
+      M0 20
+      C10 5,20 5,30 20
+      S50 35,60 20
+      S80 5,90 20
+      S110 35,120 20
+    "
+    fill="none"
+    stroke="url(#voiceGradient)"
+    strokeWidth="6"
+    strokeLinecap="round"
+  />
+</svg>
+</div>
 </button>
+)}
+
         </div>
 
       </div>
