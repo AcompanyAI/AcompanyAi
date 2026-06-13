@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 
+import Link from "next/link";
+import { Video, PanelLeftClose } from "lucide-react";
+
 import {
-  Menu,
   Plus,
   Mic,
   ArrowUp,
@@ -18,9 +20,18 @@ import {
 import SpeechRecognition from "react-speech-recognition";
 import { useSpeechRecognition } from "react-speech-recognition";
 
+import { motion, AnimatePresence } from "framer-motion";
+
 export default function Dashboard() {
+
   const [prompt, setPrompt] = useState("");
   
+const [showAvatarModal, setShowAvatarModal] = useState(false);
+
+const [showTransform, setShowTransform] = useState(false);
+
+const [selectedAvatar, setSelectedAvatar] = useState("");
+
 const welcomeMessages = [
   "Your move, Prashant.",
   "What's on your mind today?",
@@ -169,6 +180,10 @@ useEffect(() => {
   <div className="min-h-screen text-black relative overflow-hidden">
 <div className="absolute inset-0 -z-10">
 
+<div className="text-white text-center">
+  {transcript}
+</div>
+
 {theme === "blue" && (
   <div className="absolute inset-0 bg-[#07111f]"></div>
 )}
@@ -280,38 +295,84 @@ useEffect(() => {
       {/* Header */}
       <div className="flex items-center justify-between px-6 py-5">
 
-        <h1 className="text-3xl font-white text-White">
+       <div className="flex justify-center mb-8">
+  <div className="relative w-12 h-12">
 
-  <span
-    className="
-    bg-gradient-to-r
-    from-[#A78BFA]
-    via-[#8B7CF8]
-    to-[#60A5FA]
-    bg-clip-text
-    text-transparent
-    "
-  >
-    AI
-  </span>
-</h1>
+    {/* Outer Gradient Ring */}
+    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-600 via-yellow-400 to-pink-500 p-[1px]">
 
-      <button
-className="
-w-10
-h-10
-rounded-full
-bg-zinc-800
-border
-border-zinc-700
-text-white
-font-semibold
-hover:bg-zinc-700
-transition
-"
+      {/* 3D Black Orb */}
+      <div className="relative w-full h-full rounded-full bg-black overflow-hidden">
+
+        {/* Top Light Reflection */}
+        <div className="absolute top-4 left-6 w-16 h-8 bg-white/25 rounded-full blur-md rotate-[-20deg]" />
+
+        {/* Logo */}
+        <div className="absolute inset-0 flex items-center justify-center">
+         <svg
+  width="50"
+  height="20"
+  viewBox="0 0 120 40"
 >
-P
+            <defs>
+              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#8122ee" />
+                <stop offset="50%" stopColor="#f3dc0e" />
+                <stop offset="100%" stopColor="#ec4899" />
+              </linearGradient>
+            </defs>
+
+            <path
+              d="
+                M0 20
+                C10 5,20 5,30 20
+                S50 35,60 20
+                S80 5,90 20
+                S110 35,120 20
+              "
+              fill="none"
+              stroke="url(#logoGradient)"
+              strokeWidth="7"
+              strokeLinecap="round"
+            />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+<svg width="0" height="0">
+  <defs>
+    <linearGradient id="videoGradient">
+      <stop offset="0%" stopColor="#8122ee" />
+      <stop offset="50%" stopColor="#f3dc0e" />
+      <stop offset="100%" stopColor="#ec4899" />
+    </linearGradient>
+  </defs>
+</svg>
+
+<button
+ onClick={() => {
+  setShowTransform(true);
+
+  setTimeout(() => {
+    setShowTransform(false);
+    setShowAvatarModal(true);
+  }, 700);
+}}
+  className="mt-10 flex justify-center"
+>
+  <Video
+    size={22}
+    strokeWidth={1.8}
+    style={{
+      stroke: "url(#videoGradient)"
+    }}
+  />
 </button>
+
+  </div>
+</div>
 
       </div>
 
@@ -348,21 +409,31 @@ shadow-sm
 
 <div className="flex items-center justify-between mb-4">
 
-  <button
-    onClick={() => setShowProjects(false)}
-    className="
-    w-10
-    h-10
-    rounded-lg
-    hover:bg-black/5
-    flex
-    items-center
-    justify-center
-    transition-all
-    "
-  >
-    <Menu size={20} />
-  </button>
+ <button className="mt-8">
+  <PanelLeftClose
+    size={22}
+    strokeWidth={1.8}
+    className="text-white"
+  />
+</button>
+
+ <button
+className="
+w-10
+h-10
+rounded-full
+bg-zinc-800
+border
+border-zinc-700
+text-white
+font-semibold
+hover:bg-zinc-700
+transition
+"
+>
+P
+</button>
+
 
 </div>
 
@@ -845,17 +916,12 @@ placeholder:text-gray-500
 ) : (
 
 <button
-  onClick={startVoiceAssistant}
- className="
- ml-auto
-w-[50px]
-h-11
-flex
-items-center
-justify-end
-pr-0
-shrink-0
-"
+  onClick={() => {
+  SpeechRecognition.startListening({
+    continuous: false,
+    language: "en-US",
+  });
+}}
 >
  <div
   className="
@@ -905,6 +971,180 @@ shrink-0
         </div>
 
       </div>
+
+<AnimatePresence>
+  {showTransform && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[9998] flex items-center justify-center backdrop-blur-md bg-black/60"
+    >
+      <motion.div
+        initial={{
+          scale: 1,
+          opacity: 0.8,
+        }}
+        animate={{
+          scale: 8,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.7,
+          ease: "easeInOut",
+        }}
+      >
+        <Video
+          size={40}
+          strokeWidth={1.8}
+          style={{
+            stroke: "#ffffff",
+          }}
+        />
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
+{showAvatarModal && (
+  <div className="fixed inset-0 bg-black/80 backdrop-blur-md z-[9999] flex items-center justify-center">
+
+    <div className="w-[420px] rounded-3xl border border-white/10 bg-[#0a0a0a] p-6">
+
+      <h2 className="text-center text-white text-xl mb-6">
+        Choose Your AI
+      </h2>
+
+<div className="text-center text-white/70 mb-4">
+  Selected: {selectedAvatar}
+</div>
+
+      <div className="grid grid-cols-2 gap-4">
+
+        <button
+  onClick={() => setSelectedAvatar("girl")}
+  className={`
+${
+  selectedAvatar === "girl"
+  ? "border-violet-500 shadow-[0_0_25px_rgba(139,92,246,0.6)]"
+  : "border-white/10"
+}
+    overflow-hidden
+    rounded-3xl
+    border
+    border-white/10
+    hover:border-violet-500
+    transition-all
+    duration-300
+ 
+   bg-white/[0.02]
+`}
+>
+  <img
+    src="/avatars/ai-girl.jpg"
+    alt="AI Girl"
+    className="w-full h-40 object-cover object-top"
+  />
+
+  <div className="p-3 text-center text-white">
+    AI Girl
+  </div>
+</button>
+
+        <button
+        onClick={() => setSelectedAvatar("boy")}
+  className="
+    overflow-hidden
+    rounded-3xl
+    border
+    border-white/10
+    hover:border-sky-500
+    transition-all
+    duration-300
+    bg-white/[0.02]
+  "
+>
+  <img
+    src="/avatars/ai-boy.jpg"
+    alt="AI Boy"
+    className="w-full h-40 object-cover object-top"
+  />
+
+  <div className="p-3 text-center text-white">
+    AI Boy
+  </div>
+</button>
+
+        <button
+        onClick={() => setSelectedAvatar("business")}
+  className="
+    overflow-hidden
+    rounded-3xl
+    border
+    border-white/10
+    hover:border-amber-500
+    transition-all
+    duration-300
+    bg-white/[0.02]
+  "
+>
+  <img
+    src="/avatars/business.jpg"
+    alt="Business Mentor"
+    className="w-full h-40 object-cover"
+  />
+
+  <div className="p-3 text-center text-white">
+    Business Mentor
+  </div>
+</button>
+       <button
+       onClick={() => setSelectedAvatar("teacher")}
+  className="
+    overflow-hidden
+    rounded-3xl
+    border
+    border-white/10
+    hover:border-emerald-500
+    transition-all
+    duration-300
+    bg-white/[0.02]
+  "
+>
+  <img
+    src="/avatars/teacher.jpg"
+    alt="Teacher"
+    className="w-full h-40 object-cover"
+  />
+
+  <div className="p-3 text-center text-white">
+    Teacher
+  </div>
+</button>
+
+      </div>
+
+      <button
+      onClick={() => {
+  if (!selectedAvatar) {
+    alert("Please select an avatar");
+    return;
+  }
+
+  console.log(selectedAvatar);
+localStorage.setItem("avatar", selectedAvatar);
+setShowAvatarModal(false);
+window.location.href = "/video-call";}}
+
+        className="mt-6 w-full py-3 rounded-xl bg-white/10 text-white"
+      >
+       Continue
+      </button>
+
+    </div>
+
+  </div>
+)}
 
     </div>
   );

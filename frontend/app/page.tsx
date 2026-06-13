@@ -1,5 +1,5 @@
 import {
-  Zap,
+  Zap, 
   Palette,
   CloudDownload,
   ShieldCheck,
@@ -32,12 +32,6 @@ export default function Home() {
   </span>
 </h1>
 
-        <div className="hidden md:flex gap-10 text-gray-300">
-          <a href="#features">Features</a>
-<a href="/templates">Templates</a>
-<a href="/pricing">Pricing</a>
-<a href="/about">About</a>
-        </div>
 
         <div className="flex gap-5 items-center">
        <a
@@ -64,12 +58,6 @@ href="/login"
 
       {<div className="absolute inset-0 -z-10 overflow-hidden">
 
-  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-violet-900/30 via-violet-800/20 to-[#050816]"></div>
-
-  <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-violet-600/20 rounded-full blur-[300px]"></div>
-
-  <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-purple-500/15 rounded-full blur-[250px]"></div>
-
   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-blue-600/10 rounded-full blur-[300px]"></div>
 
 </div>}
@@ -78,102 +66,88 @@ href="/login"
         <div className="absolute inset-0 -z-10">
   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-violet-600/20 rounded-full blur-[250px]"></div>
 </div>
-       <h1 className="mt-20 z-10 text-6xl md:text-[140px] font-black leading-none tracking-tight text-center mx-auto">
+
+<div className="flex justify-center mb-8">
+  <div className="relative w-40 h-40">
+
+    {/* Outer Gradient Ring */}
+    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-600 via-yellow-400 to-pink-500 p-[1px]">
+
+      {/* 3D Black Orb */}
+      <div className="relative w-full h-full rounded-full bg-black overflow-hidden">
+
+        {/* Top Light Reflection */}
+        <div className="absolute top-4 left-6 w-16 h-8 bg-white/25 rounded-full blur-md rotate-[-20deg]" />
+
+        {/* Logo */}
+        <div className="absolute inset-0 flex items-center justify-center">
+         <svg
+  width="180"
+  height="90"
+  viewBox="0 0 120 40"
+>
+            <defs>
+              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#8122ee" />
+                <stop offset="50%" stopColor="#f3dc0e" />
+                <stop offset="100%" stopColor="#ec4899" />
+              </linearGradient>
+            </defs>
+
+            <path
+              d="
+                M0 20
+                C10 5,20 5,30 20
+                S50 35,60 20
+                S80 5,90 20
+                S110 35,120 20
+              "
+              fill="none"
+              stroke="url(#logoGradient)"
+              strokeWidth="7"
+              strokeLinecap="round"
+            />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <h1 className="mt-4 z-10 text-6xl md:text-[115px] font-semibold leading-[0.95] tracking-[-0.06em] text-center mx-auto">
   <span className="text-white">
     Acompany
   </span>
-  <span className="bg-gradient-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+
+  <span className="bg-gradient-to-r from-violet-600 via-yellow-400 to-pink-500 bg-clip-text text-transparent">
     AI
   </span>
 </h1>
-
        <p className="mt-8 text-gray-400 text-base md:text-xl max-w-3xl z-10 px-4">
           Ai Powered by AcompanyAi
         </p>
 
-        <a
+      <a
   href="/dashboard"
-  className="
-  mt-10
-  px-12
-  py-4
-  rounded-2xl
-  text-lg
-  font-semibold
-  text-white
-  bg-white/5
-  backdrop-blur-xl
-  border border-white/20
-  hover:bg-white/10
-  transition-all
-  duration-300
-  "
+ className="relative mt-10 inline-flex rounded-2xl p-[1px] overflow-hidden border border-white/20"
 >
- Start Free
+  <span className="gemini-border"></span>
+
+  <span
+    className="
+      relative z-10
+      px-12 py-4
+      rounded-2xl
+      text-lg font-semibold text-white
+     bg-black/40
+      backdrop-blur-xl
+    "
+  >
+    Start Free
+  </span>
 </a>
-      </section>
-
-      {/* Features */}
-     <section id="features"></section> 
-     <section className="max-w-7xl mx-auto px-4 md:px-8 -mt-24 pb-20">
-  <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden">
-
-    <div className="grid grid-cols-1 md:grid-cols-4">
-
-      <div className="p-6 flex gap-4 items-start border-b md:border-b-0 md:border-r border-white/10">
-        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
-          <Zap className="w-6 h-6 text-violet-400" />
-        </div>
-
-        <div>
-          <h3 className="font-semibold">AI Powered</h3>
-          <p className="text-sm text-gray-400">
-            Generate unique designs using advanced AI.
-          </p>
-        </div>
-      </div>
-
-      <div className="p-6 flex gap-4 items-start border-b md:border-b-0 md:border-r border-white/10">
-        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
-          <Palette className="w-6 h-6 text-violet-400" />
-        </div>
-
-        <div>
-          <h3 className="font-semibold">Easy To Use</h3>
-          <p className="text-sm text-gray-400">
-            Simple editor, drag & drop and done.
-          </p>
-        </div>
-      </div>
-
-      <div className="p-6 flex gap-4 items-start border-b md:border-b-0 md:border-r border-white/10">
-        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
-          <CloudDownload className="w-6 h-6 text-violet-400" />
-        </div>
-
-        <div>
-          <h3 className="font-semibold">High Quality</h3>
-          <p className="text-sm text-gray-400">
-            Download high-resolution designs instantly.
-          </p>
-        </div>
-      </div>
-
-      <div className="p-6 flex gap-4 items-start">
-        <div className="w-12 h-12 rounded-2xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
-          <ShieldCheck className="w-6 h-6 text-violet-400" />
-        </div>
-
-        <div>
-          <h3 className="font-semibold">100% Safe</h3>
-          <p className="text-sm text-gray-400">
-            Your data is secure and private.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
 </section></div>
 );
 }

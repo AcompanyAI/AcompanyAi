@@ -1,3 +1,5 @@
+import { Sora } from "next/font/google";
+
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -6,6 +8,10 @@ export const metadata: Metadata = {
   description: "AcompanyAI Workspace",
 };
 
+const sora = Sora({
+  subsets: ["latin"],
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -13,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+     <body className={sora.className}>
         {children}
       </body>
     </html>
