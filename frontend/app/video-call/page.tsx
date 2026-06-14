@@ -1,5 +1,7 @@
 "use client";
 
+
+
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
@@ -83,6 +85,10 @@ const remainingSeconds = seconds % 60;
 
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
+
+<div className="absolute top-10 left-1/2 -translate-x-1/2 text-white">
+  {transcript}
+</div>
 
 <div className="absolute top-10 left-1/2 -translate-x-1/2 z-50">
  <img
@@ -250,7 +256,15 @@ uppercase
       >
 
         {/* Mic */}
-    <button className="liquid-btn">
+   <button
+  className="liquid-btn"
+  onClick={() => {
+    SpeechRecognition.startListening({
+      continuous: false,
+      language: "en-US",
+    });
+  }}
+>
   <Mic size={24} />
 </button>
         {/* End Call */}
