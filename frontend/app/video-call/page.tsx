@@ -27,6 +27,9 @@ const {
   resetTranscript,
 } = useSpeechRecognition();
 
+const browserSupportsSpeechRecognition =
+  SpeechRecognition.browserSupportsSpeechRecognition();
+
 useEffect(() => {
   const savedAvatar = localStorage.getItem("avatar");
 
@@ -94,6 +97,10 @@ const remainingSeconds = seconds % 60;
   Listening: {listening ? "YES" : "NO"}
   <br />
   Transcript: {transcript}
+</div>
+
+<div className="text-white">
+  Support: {browserSupportsSpeechRecognition ? "YES" : "NO"}
 </div>
 
 <div className="absolute top-10 left-1/2 -translate-x-1/2 z-50">
@@ -264,14 +271,20 @@ uppercase
         {/* Mic */}
    <button
   className="liquid-btn"
-  onClick={() => {
-    console.log("Mic Clicked");
+ onClick={async () => {
+  try {
+    await navigator.mediaDevices.getUserMedia({ audio: true });
+    alert("Microphone OK");
 
     SpeechRecognition.startListening({
       continuous: false,
       language: "en-US",
     });
-  }}
+  } catch (err) {
+    alert("Mic Error");
+    console.log(err);
+  }
+}}
 >
   <Mic size={24} />
 </button>

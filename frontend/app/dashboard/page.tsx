@@ -874,18 +874,27 @@ placeholder:text-gray-500
     try {
       setLoading(true);
 
-      const res = await fetch("http://127.0.0.1:5000/chat");
-      const data = await res.json();
+      const res = await fetch("http://127.0.0.1:5000/chat", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    message: userMessage,
+  }),
+});
 
-      setLoading(false);
+const data = await res.json();
 
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content: data.reply,
-        },
-      ]);
+  setLoading(false);
+
+  setMessages((prev) => [
+    ...prev,
+    {
+      role: "assistant",
+      content: data.reply,
+    },
+  ]);
     } catch {
       setLoading(false);
 
