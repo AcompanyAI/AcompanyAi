@@ -90,6 +90,12 @@ const remainingSeconds = seconds % 60;
   {transcript}
 </div>
 
+<div className="text-white absolute top-5 left-5 z-50">
+  Listening: {listening ? "YES" : "NO"}
+  <br />
+  Transcript: {transcript}
+</div>
+
 <div className="absolute top-10 left-1/2 -translate-x-1/2 z-50">
  <img
   src={avatarImage}
@@ -259,6 +265,8 @@ uppercase
    <button
   className="liquid-btn"
   onClick={() => {
+    console.log("Mic Clicked");
+
     SpeechRecognition.startListening({
       continuous: false,
       language: "en-US",
