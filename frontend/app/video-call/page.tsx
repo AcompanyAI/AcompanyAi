@@ -326,11 +326,11 @@ uppercase
   try {
     await navigator.mediaDevices.getUserMedia({ audio: true });
     alert("Microphone OK");
+SpeechRecognition.startListening({
+  continuous: false,
+  language: "hi-IN",
+});
 
-    SpeechRecognition.startListening({
-      continuous: false,
-      language: "en-US",
-    });
   } catch (err) {
     alert("Mic Error");
     console.log(err);
