@@ -886,7 +886,23 @@ placeholder:text-gray-500
 
 const data = await res.json();
 
+console.log("Response:", data);
+alert(JSON.stringify(data));
+
+console.log("API Response:", data);
+
   setLoading(false);
+
+if (data.error) {
+  setMessages((prev) => [
+    ...prev,
+    {
+      role: "assistant",
+      content: data.error,
+    },
+  ]);
+  return;
+}
 
   setMessages((prev) => [
     ...prev,

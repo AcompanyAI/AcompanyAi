@@ -21,14 +21,57 @@ const [avatar, setAvatar] = useState("");
 
 const [avatarImage, setAvatarImage] = useState("");
 
+const [aiReply, setAiReply] = useState("");
+const [loading, setLoading] = useState(false);
+
 const {
   transcript,
   listening,
   resetTranscript,
 } = useSpeechRecognition();
 
+useEffect(() => {
+  if (
+    transcript &&
+    transcript.length > 10 &&
+    !loading
+  ) {
+    sendToAI(transcript);
+  }
+}, [transcript]);
+
 const browserSupportsSpeechRecognition =
   SpeechRecognition.browserSupportsSpeechRecognition();
+
+const sendToAI = async (message: string) => {
+  try {
+    setLoading(true);
+
+    const response = await fetch(
+      "http://127.0.0.1:5000/chat",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message,
+        }),
+      }
+    );
+
+    const data = await response.json();
+
+console.log(data);
+
+    setAiReply(data.reply);
+  } catch (error) {
+    console.error(error);
+    setAiReply("AI connection error");
+  } finally {
+    setLoading(false);
+  }
+};
 
 useEffect(() => {
   const savedAvatar = localStorage.getItem("avatar");
@@ -117,6 +160,14 @@ const remainingSeconds = seconds % 60;
     shadow-[0_0_40px_rgba(255,255,255,0.08)]
   "
 />
+</div>
+
+<div className="mt-6 text-center text-white px-6">
+  {loading ? (
+    <p>Thinking...</p>
+  ) : (
+    <p>{aiReply}</p>
+  )}
 </div>
 
 <div
