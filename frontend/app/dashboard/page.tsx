@@ -78,6 +78,12 @@ const [showProjects, setShowProjects] = useState(false);
 
 const [projects, setProjects] = useState<string[]>([]);
 
+const handleSend = () => {
+  document.querySelector<HTMLButtonElement>(
+    "#send-btn"
+  )?.click();
+};
+
 const startVoiceAssistant = () => {
   useEffect(() => {
   const text = transcript.toLowerCase();
@@ -823,27 +829,34 @@ shadow-xl
 <input
   value={prompt}
   onChange={(e) => setPrompt(e.target.value)}
- placeholder={
-  listening
-    ? "Listening..."
-    : "Ask AcompanyAI"
-}
- className="
-flex-1
-pr-2
-bg-white
-text-black
-text-[18px]
-md:text-[20px]
-font-normal
-tracking-tight
-outline-none
-placeholder:text-gray-500
-"
+ onKeyDown={(e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    handleSend();
+  }
+}}
+  placeholder={
+    listening
+      ? "Listening..."
+      : "Ask AcompanyAI"
+  }
+  className="
+    flex-1
+    pr-2
+    bg-white
+    text-black
+    text-[18px]
+    md:text-[20px]
+    font-normal
+    tracking-tight
+    outline-none
+    placeholder:text-gray-500
+  "
 />
 {prompt.trim() ? (
 
 <button
+  id="send-btn"
   onClick={async () => {
 
     if (!prompt.trim()) return;

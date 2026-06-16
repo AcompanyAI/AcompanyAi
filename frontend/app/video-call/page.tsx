@@ -1,14 +1,21 @@
 "use client";
 
-
-
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { Mic, Video, PhoneOff } from "lucide-react";
+
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export default function VideoCallPage() {
 
@@ -22,7 +29,27 @@ const [avatar, setAvatar] = useState("");
 const [avatarImage, setAvatarImage] = useState("");
 
 const [aiReply, setAiReply] = useState("");
+
+const [messages, setMessages] = useState<any[]>(() => {
+  if (typeof window !== "undefined") {
+    const saved = localStorage.getItem("chatHistory");
+    return saved ? JSON.parse(saved) : [];
+  }
+  return [];
+});
+
 const [loading, setLoading] = useState(false);
+
+const [isTyping, setIsTyping] = useState(false);
+
+const messagesEndRef = useRef<HTMLDivElement>(null);
+
+useEffect(() => {
+  localStorage.setItem(
+    "chatHistory",
+    JSON.stringify(messages)
+  );
+}, [messages]);
 
 const {
   transcript,
@@ -62,9 +89,32 @@ const sendToAI = async (message: string) => {
 
     const data = await response.json();
 
-console.log(data);
+console.log("RAW REPLY:");
+console.log(data.reply);
 
-    setAiReply(data.reply);
+    setMessages((prev) => [
+  ...prev,
+  {
+    role: "user",
+    content: transcript,
+  },
+  {
+    role: "assistant",
+    content: data.reply,
+  },
+]);
+
+const speech = new SpeechSynthesisUtterance(data.reply);
+
+speech.lang = "hi-IN";
+speech.rate = 1;
+speech.pitch = 1;
+
+window.speechSynthesis.cancel();
+window.speechSynthesis.speak(speech);
+
+setAiReply(data.reply);
+
   } catch (error) {
     console.error(error);
     setAiReply("AI connection error");
@@ -74,23 +124,29 @@ console.log(data);
 };
 
 useEffect(() => {
+  messagesEndRef.current?.scrollIntoView({
+    behavior: "smooth",
+  });
+}, [messages]);
+
+useEffect(() => {
   const savedAvatar = localStorage.getItem("avatar");
 
-if (savedAvatar === "girl") {
-  setAvatarImage("/avatars/ai-girl.jpg");
-}
+  if (savedAvatar === "girl") {
+    setAvatarImage("/avatars/ai-girl.jpg");
+  }
 
-if (savedAvatar === "boy") {
-  setAvatarImage("/avatars/ai-boy.jpg");
-}
+  if (savedAvatar === "boy") {
+    setAvatarImage("/avatars/ai-boy.jpg");
+  }
 
-if (savedAvatar === "business") {
-  setAvatarImage("/avatars/business.jpg");
-}
+  if (savedAvatar === "business") {
+    setAvatarImage("/avatars/business.jpg");
+  }
 
-if (savedAvatar === "teacher") {
-  setAvatarImage("/avatars/teacher.jpg");
-}
+  if (savedAvatar === "teacher") {
+    setAvatarImage("/avatars/teacher.jpg");
+  }
 
   if (savedAvatar) {
     setAvatar(savedAvatar);
@@ -130,8 +186,9 @@ const minutes = Math.floor(seconds / 60);
 const remainingSeconds = seconds % 60;
 
   return (
-    <main className="relative min-h-screen bg-black text-white overflow-hidden">
-
+  <main
+  className={`${inter.className} relative min-h-screen bg-black text-white overflow-hidden`}
+>
 <div className="absolute top-10 left-1/2 -translate-x-1/2 text-white">
   {transcript}
 </div>
@@ -142,32 +199,96 @@ const remainingSeconds = seconds % 60;
   Transcript: {transcript}
 </div>
 
+{/*
 <div className="text-white">
   Support: {browserSupportsSpeechRecognition ? "YES" : "NO"}
 </div>
+*/}
 
 <div className="absolute top-10 left-1/2 -translate-x-1/2 z-50">
- <img
-  src={avatarImage}
-  alt="AI Avatar"
-  className="
-    w-64
-    h-80
-    object-cover
-    rounded-3xl
-    border
-    border-white/10
-    shadow-[0_0_40px_rgba(255,255,255,0.08)]
-  "
-/>
+{avatarImage && (
+  <img
+    src={avatarImage}
+    alt="AI Avatar"
+    className="
+      w-64
+      h-80
+      object-cover
+      rounded-3xl
+      border
+      border-white/10
+    "
+  />
+)}
 </div>
 
 <div className="mt-6 text-center text-white px-6">
-  {loading ? (
-    <p>Thinking...</p>
-  ) : (
-    <p>{aiReply}</p>
-  )}
+ {loading ? (
+  <p>Thinking...</p>
+) : (
+  <div
+    className="
+      text-left
+      text-white
+      text-lg
+      leading-8
+      max-w-3xl
+      mx-auto
+      prose
+      prose-invert
+    "
+  >
+   <div className="max-w-6xl mx-auto space-y-6 text-left">
+
+<div ref={messagesEndRef}></div>
+
+  {messages.map((msg, index) => (
+    <div
+      key={index}
+      className={`flex ${
+        msg.role === "user"
+  ? "bg-blue-600 text-white"
+  : "bg-zinc-800 text-white"
+      }`}
+    >
+      <div
+     className={`max-w-4xl w-full px-6 py-4 rounded-3xl shadow-lg ${
+          msg.role === "user"
+            ? "bg-blue-600 text-white"
+            : "bg-white/10 text-white backdrop-blur-md"
+        }`}
+      >
+    <div
+  className="
+    prose
+    prose-invert
+    prose-lg
+    max-w-none
+    text-left
+  "
+>
+  <ReactMarkdown
+  remarkPlugins={[remarkGfm]}
+>
+{`# TEST
+
+## Heading
+
+### Sub Heading
+
+- One
+- Two
+
+**Bold Text**
+`}
+</ReactMarkdown>
+</div>
+      </div>
+    </div>
+  ))}
+</div>
+  </div>
+)}
 </div>
 
 <div
