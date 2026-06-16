@@ -105,7 +105,16 @@ console.log(data.reply);
   },
 ]);
 console.log("RADHA SPEAKING", data.reply);
+
 const speech = new SpeechSynthesisUtterance(data.reply);
+
+const voices = window.speechSynthesis.getVoices();
+
+console.log("VOICES:", voices);
+
+speech.voice =
+  voices.find((v) => v.lang.includes("hi")) ||
+  voices[0];
 
 speech.lang = "hi-IN";
 
@@ -117,9 +126,10 @@ speech.onend = () => {
   setIsSpeaking(false);
 };
 
-speech.lang = "hi-IN";
 speech.rate = 1;
 speech.pitch = 1;
+
+alert("Radha bolne wali hai");
 
 window.speechSynthesis.cancel();
 window.speechSynthesis.speak(speech);
