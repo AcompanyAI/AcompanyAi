@@ -23,6 +23,17 @@ const [seconds, setSeconds] = useState(300);
 
 const [status, setStatus] = useState("Listening...");
 
+useEffect(() => {
+  const speech = new SpeechSynthesisUtterance(
+    "Namaste Prashant, Radha speaking"
+  );
+
+  speech.lang = "hi-IN";
+
+  setTimeout(() => {
+    window.speechSynthesis.speak(speech);
+  }, 2000);
+}, []);
 
 const [avatar, setAvatar] = useState("");
 
