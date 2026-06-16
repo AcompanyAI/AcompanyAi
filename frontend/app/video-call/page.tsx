@@ -221,16 +221,19 @@ const remainingSeconds = seconds % 60;
 
 <div className="absolute top-10 left-1/2 -translate-x-1/2 z-50">
 {avatarImage && (
- <img
-  src={avatar}
-  alt="avatar"
-  className={`
-    rounded-full
-    transition-all
-    duration-300
-    ${isSpeaking ? "scale-110 animate-pulse" : ""}
-  `}
-/>
+  <img
+    src={avatarImage}
+    alt="avatar"
+    className={`
+      w-30
+      h-30 
+      object-cover
+      rounded-full
+      transition-all
+      duration-300
+      ${isSpeaking ? "scale-110 animate-pulse" : ""}
+    `}
+  />
 )}
 </div>
 
