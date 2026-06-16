@@ -104,7 +104,7 @@ console.log(data.reply);
     content: data.reply,
   },
 ]);
-
+console.log("RADHA SPEAKING", data.reply);
 const speech = new SpeechSynthesisUtterance(data.reply);
 
 speech.lang = "hi-IN";
@@ -116,9 +116,6 @@ speech.onstart = () => {
 speech.onend = () => {
   setIsSpeaking(false);
 };
-
-window.speechSynthesis.cancel();
-window.speechSynthesis.speak(speech);
 
 speech.lang = "hi-IN";
 speech.rate = 1;
