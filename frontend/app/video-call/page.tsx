@@ -76,7 +76,7 @@ const sendToAI = async (message: string) => {
     setLoading(true);
 
     const response = await fetch(
-      "https://acompanyai-production.up.railway.app/chat",
+      "http://127.0.0.1:8000/chat",
       {
         method: "POST",
         headers: {
