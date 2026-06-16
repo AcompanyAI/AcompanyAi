@@ -23,18 +23,6 @@ const [seconds, setSeconds] = useState(300);
 
 const [status, setStatus] = useState("Listening...");
 
-useEffect(() => {
-  const speech = new SpeechSynthesisUtterance(
-    "Namaste Prashant, Radha speaking"
-  );
-
-  speech.lang = "hi-IN";
-
-  setTimeout(() => {
-    window.speechSynthesis.speak(speech);
-  }, 2000);
-}, []);
-
 const [avatar, setAvatar] = useState("");
 
 const [avatarImage, setAvatarImage] = useState("");
@@ -50,6 +38,8 @@ const [messages, setMessages] = useState<any[]>(() => {
 });
 
 const [loading, setLoading] = useState(false);
+
+const [isSpeaking, setIsSpeaking] = useState(false);
 
 const [isTyping, setIsTyping] = useState(false);
 
@@ -116,6 +106,19 @@ console.log(data.reply);
 ]);
 
 const speech = new SpeechSynthesisUtterance(data.reply);
+
+speech.lang = "hi-IN";
+
+speech.onstart = () => {
+  setIsSpeaking(true);
+};
+
+speech.onend = () => {
+  setIsSpeaking(false);
+};
+
+window.speechSynthesis.cancel();
+window.speechSynthesis.speak(speech);
 
 speech.lang = "hi-IN";
 speech.rate = 1;
@@ -218,18 +221,16 @@ const remainingSeconds = seconds % 60;
 
 <div className="absolute top-10 left-1/2 -translate-x-1/2 z-50">
 {avatarImage && (
-  <img
-    src={avatarImage}
-    alt="AI Avatar"
-    className="
-      w-64
-      h-80
-      object-cover
-      rounded-3xl
-      border
-      border-white/10
-    "
-  />
+ <img
+  src={avatar}
+  alt="avatar"
+  className={`
+    rounded-full
+    transition-all
+    duration-300
+    ${isSpeaking ? "scale-110 animate-pulse" : ""}
+  `}
+/>
 )}
 </div>
 
