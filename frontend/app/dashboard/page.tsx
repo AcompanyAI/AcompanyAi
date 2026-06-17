@@ -1,12 +1,19 @@
 "use client";
-import { useState, useEffect } from "react";
-
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Video, PanelLeftClose } from "lucide-react";
 
 import {
   Plus,
-  Mic,
+  ImagePlus,
+  FolderOpen,
+  Sparkles,
+  Brain,
+  Globe2,
+  Compass,
+ ChevronRight,
+MoreHorizontal,
+Mic,
   ArrowUp,
   PenSquare,
   Search,
@@ -14,7 +21,6 @@ import {
   FolderKanban,
   Grid3X3,
   Code2,
-  MoreHorizontal,
 } from "lucide-react";
 
 import SpeechRecognition from "react-speech-recognition";
@@ -31,6 +37,27 @@ const [showAvatarModal, setShowAvatarModal] = useState(false);
 const [showTransform, setShowTransform] = useState(false);
 
 const [selectedAvatar, setSelectedAvatar] = useState("");
+
+const [showPlusMenu, setShowPlusMenu] = useState(false);
+
+const fileInputRef = useRef<HTMLInputElement>(null);
+const cameraInputRef = useRef<HTMLInputElement>(null);
+
+const handleFileUpload = (e: any) => {
+  const file = e.target.files?.[0];
+
+  if (file) {
+    console.log("File Selected:", file);
+  }
+};
+
+const handleCameraUpload = (e: any) => {
+  const file = e.target.files?.[0];
+
+  if (file) {
+    console.log("Camera Image:", file);
+  }
+};
 
 const welcomeMessages = [
   "Your move, Prashant.",
@@ -814,6 +841,23 @@ shadow-xl
   }
 }}
   />
+
+<input
+  type="file"
+  accept="image/*"
+  capture="environment"
+  ref={cameraInputRef}
+  className="hidden"
+  onChange={handleCameraUpload}
+/>
+
+<input
+  type="file"
+  ref={fileInputRef}
+  className="hidden"
+  onChange={handleFileUpload}
+/>
+
   <div
   >
     <label className="cursor-pointer shrink-0"></label>
@@ -821,8 +865,80 @@ shadow-xl
   <Plus
   size={32}
   strokeWidth={1.5}
-  className="text-gray-1000"
+  className="text-gray-1000 cursor-pointer"
+  onClick={() => setShowPlusMenu(!showPlusMenu)}
 />
+
+{showPlusMenu && (
+  <div
+    className="
+      absolute
+      bottom-16
+      left-0
+      w-80
+      bg-white/95
+      backdrop-blur-xl
+      border
+      border-gray-200
+      rounded-[28px]
+      shadow-[0_20px_60px_rgba(0,0,0,0.15)]
+      overflow-hidden
+      z-50
+      animate-in
+      slide-in-from-bottom-3
+      duration-200
+    "
+  >
+
+    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
+      <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center">
+        <ImagePlus size={20} />
+      </div>
+      <span className="font-medium">Add photos & files</span>
+    </button>
+
+    <button className="group flex items-center justify-between w-full px-5 py-4 hover:bg-gray-50 transition">
+      <div className="flex items-center gap-4">
+        <div className="h-10 w-10 rounded-xl bg-purple-50 flex items-center justify-center">
+          <FolderOpen size={20} />
+        </div>
+        <span className="font-medium">Recent files</span>
+      </div>
+      <ChevronRight size={18} />
+    </button>
+
+    <div className="mx-4 border-t border-gray-100" />
+
+    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
+      <div className="h-10 w-10 rounded-xl bg-pink-50 flex items-center justify-center">
+        <Sparkles size={20} />
+      </div>
+      <span className="font-medium">Create image</span>
+    </button>
+
+    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
+      <div className="h-10 w-10 rounded-xl bg-yellow-50 flex items-center justify-center">
+        <Brain size={20} />
+      </div>
+      <span className="font-medium">Thinking Mode</span>
+    </button>
+
+    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
+      <div className="h-10 w-10 rounded-xl bg-green-50 flex items-center justify-center">
+        <Compass size={20} />
+      </div>
+      <span className="font-medium">Deep Research</span>
+    </button>
+
+    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
+      <div className="h-10 w-10 rounded-xl bg-cyan-50 flex items-center justify-center">
+        <Globe2 size={20} />
+      </div>
+      <span className="font-medium">Web Search</span>
+    </button>
+
+  </div>
+)}
 
   </div>
 </label>
