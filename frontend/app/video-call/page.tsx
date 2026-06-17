@@ -129,8 +129,8 @@ speech.onend = () => {
 speech.rate = 1;
 speech.pitch = 1;
 
+console.log("SPEAK FUNCTION RUNNING");
 alert("Radha bolne wali hai");
-
 window.speechSynthesis.cancel();
 window.speechSynthesis.speak(speech);
 
