@@ -1,5 +1,12 @@
 import { Sora } from "next/font/google";
 
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
+
 import type { Metadata } from "next";
 import "./globals.css";
 

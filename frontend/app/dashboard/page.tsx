@@ -1,11 +1,19 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { Video, PanelLeftClose } from "lucide-react";
+import { PanelLeftClose } from "lucide-react";
 
 import {
   Plus,
+    FileText,
+  Video,
+  Music,
+  Code2,
+  FolderKanban,
+  Palette,
+  Menu,
   ImagePlus,
+  Camera,
   FolderOpen,
   Sparkles,
   Brain,
@@ -18,9 +26,7 @@ Mic,
   PenSquare,
   Search,
   Library,
-  FolderKanban,
   Grid3X3,
-  Code2,
 } from "lucide-react";
 
 import SpeechRecognition from "react-speech-recognition";
@@ -36,12 +42,15 @@ const [showAvatarModal, setShowAvatarModal] = useState(false);
 
 const [showTransform, setShowTransform] = useState(false);
 
+const [showMoreMenu, setShowMoreMenu] = useState(false);
+
 const [selectedAvatar, setSelectedAvatar] = useState("");
 
 const [showPlusMenu, setShowPlusMenu] = useState(false);
 
 const fileInputRef = useRef<HTMLInputElement>(null);
 const cameraInputRef = useRef<HTMLInputElement>(null);
+const plusMenuRef = useRef<HTMLDivElement>(null);
 
 const handleFileUpload = (e: any) => {
   const file = e.target.files?.[0];
@@ -208,6 +217,26 @@ useEffect(() => {
 
 }, [transcript]);
 
+useEffect(() => {
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      plusMenuRef.current &&
+      !plusMenuRef.current.contains(event.target as Node)
+    ) {
+      setShowPlusMenu(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+
+  return () => {
+    document.removeEventListener(
+      "mousedown",
+      handleClickOutside
+    );
+  };
+}, []);
+
   return (
     
   <div className="min-h-screen text-black relative overflow-hidden">
@@ -326,57 +355,13 @@ useEffect(() => {
 
 </div>
       {/* Header */}
-      <div className="flex items-center justify-between px-6 py-5">
 
-       <div className="flex justify-center mb-8">
-  <div className="relative w-12 h-12">
-
-    {/* Outer Gradient Ring */}
-    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-violet-600 via-yellow-400 to-pink-500 p-[1px]">
-
-      {/* 3D Black Orb */}
-      <div className="relative w-full h-full rounded-full bg-black overflow-hidden">
-
-        {/* Top Light Reflection */}
-        <div className="absolute top-4 left-6 w-16 h-8 bg-white/25 rounded-full blur-md rotate-[-20deg]" />
-
-        {/* Logo */}
-        <div className="absolute inset-0 flex items-center justify-center">
-         <svg
-  width="50"
-  height="20"
-  viewBox="0 0 120 40"
->
-            <defs>
-              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#8122ee" />
-                <stop offset="50%" stopColor="#f3dc0e" />
-                <stop offset="100%" stopColor="#ec4899" />
-              </linearGradient>
-            </defs>
-
-            <path
-              d="
-                M0 20
-                C10 5,20 5,30 20
-                S50 35,60 20
-                S80 5,90 20
-                S110 35,120 20
-              "
-              fill="none"
-              stroke="url(#logoGradient)"
-              strokeWidth="7"
-              strokeLinecap="round"
-            />
-          </svg>
-        </div>
-
-      </div>
-    </div>
+<div className="flex items-center justify-between px-6 py-5">
+  <div className="flex justify-center">
 
 <svg width="0" height="0">
   <defs>
-    <linearGradient id="videoGradient">
+    <linearGradient id="videoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stopColor="#8122ee" />
       <stop offset="50%" stopColor="#f3dc0e" />
       <stop offset="100%" stopColor="#ec4899" />
@@ -385,29 +370,28 @@ useEffect(() => {
 </svg>
 
 <button
- onClick={() => {
-  setShowTransform(true);
+  onClick={() => {
+    setShowTransform(true);
 
-  setTimeout(() => {
-    setShowTransform(false);
-    setShowAvatarModal(true);
-  }, 700);
-}}
+    setTimeout(() => {
+      setShowTransform(false);
+      setShowAvatarModal(true);
+    }, 700);
+  }}
   className="mt-10 flex justify-center"
 >
-  <Video
-    size={22}
-    strokeWidth={1.8}
-    style={{
-      stroke: "url(#videoGradient)"
-    }}
-  />
+ <Video
+  size={28}
+  strokeWidth={2}
+  style={{
+    stroke: "url(#videoGradient)",
+    fill: "none",
+  }}
+/>
 </button>
 
   </div>
 </div>
-
-      </div>
 
       {/* Recent Projects */}
       <div className="px-6">
@@ -823,8 +807,7 @@ gap-0
 shadow-xl
 ">
 
-<label className="cursor-pointer shrink-0 mr-2">
-
+<div className="cursor-pointer shrink-0 mr-2">
   <input
   type="file"
   accept="image/*"
@@ -860,88 +843,203 @@ shadow-xl
 
   <div
   >
-    <label className="cursor-pointer shrink-0"></label>
-    
+  <div className="relative">
   <Plus
-  size={32}
-  strokeWidth={1.5}
-  className="text-gray-1000 cursor-pointer"
-  onClick={() => setShowPlusMenu(!showPlusMenu)}
-/>
+    size={32}
+    strokeWidth={1.5}
+    className="cursor-pointer"
+    onClick={() => setShowPlusMenu(!showPlusMenu)}
+  />
+</div>
 
 {showPlusMenu && (
   <div
-    className="
-      absolute
-      bottom-16
-      left-0
-      w-80
-      bg-white/95
-      backdrop-blur-xl
-      border
-      border-gray-200
-      rounded-[28px]
-      shadow-[0_20px_60px_rgba(0,0,0,0.15)]
-      overflow-hidden
-      z-50
-      animate-in
-      slide-in-from-bottom-3
-      duration-200
-    "
+  ref={plusMenuRef}
+  className="
+absolute
+bottom-16
+left-0
+w-[272px]
+bg-white
+rounded-[24px]
+border
+border-gray-200
+shadow-lg
+overflow-hidden
+z-50
+"
+>
+
+   <button
+  className="flex items-center w-full px-4 py-[10px] hover:bg-gray-50"
+  onClick={() => {
+    setShowPlusMenu(false);
+    fileInputRef.current?.click();
+  }}
+>
+  <ImagePlus size={20} strokeWidth={1.5} />
+  <span className="ml-3 text-[14px] font-normal text-gray-900">
+    Add photos & files
+  </span>
+</button>
+
+   <button
+  className="flex items-center justify-between w-full px-4 py-3 hover:bg-gray-50"
+  onClick={() => {
+    setShowPlusMenu(false);
+    alert("Recent files coming soon");
+  }}
+>
+  <div className="flex items-center">
+    <FolderOpen size={20} strokeWidth={1.5} />
+    <span className="ml-3 text-[14px] font-normal text-gray-900">
+      Recent files
+    </span>
+  </div>
+
+  <ChevronRight size={18} />
+</button>
+
+    <div className="mx-4 border-t border-gray-200" />
+
+   <button
+  className="flex items-center w-full px-4 py-3 hover:bg-gray-50"
+  onClick={() => {
+    setShowPlusMenu(false);
+    setPrompt("Create an image of ");
+  }}
+>
+  <Sparkles size={20} strokeWidth={1.5} />
+  <span className="ml-3 text-[14px] font-normal text-gray-900">
+    Create image
+  </span>
+</button>
+
+   <button
+  className="flex items-center w-full px-4 py-3 hover:bg-gray-50"
+  onClick={() => {
+    setShowPlusMenu(false);
+    alert("Thinking Mode Enabled");
+  }}
+>
+  <Brain size={20} strokeWidth={1.5} />
+  <span className="ml-3 text-[14px] font-normal text-gray-900">
+    Thinking
+  </span>
+</button>
+
+   <button
+  className="flex items-center w-full px-4 py-3 hover:bg-gray-50"
+  onClick={() => {
+    setShowPlusMenu(false);
+    alert("Deep Research Enabled");
+  }}
+>
+  <Compass size={20} strokeWidth={1.5} />
+  <span className="ml-3 text-[14px] font-normal text-gray-900">
+    Deep research
+  </span>
+</button>
+
+   <button
+  className="flex items-center w-full px-4 py-3 hover:bg-gray-50"
+  onClick={() => {
+    setShowPlusMenu(false);
+    alert("Web Search Enabled");
+  }}
+>
+  <Globe2 size={20} strokeWidth={1.5} />
+  <span className="ml-3 text-[14px] font-normal text-gray-900">
+    Web search
+  </span>
+</button>
+
+<button
+  className="flex items-center w-full px-4 py-3 hover:bg-gray-50"
+  onClick={() => {
+    setShowPlusMenu(false);
+    cameraInputRef.current?.click();
+  }}
+>
+  <Camera size={18} strokeWidth={1.5} />
+  <span className="ml-3 text-[14px] font-normal text-gray-900">
+    Camera
+  </span>
+</button>
+
+ <div className="relative">
+
+  <button
+    className="flex items-center justify-between w-full px-4 py-3 hover:bg-gray-50"
+    onClick={() => setShowMoreMenu(!showMoreMenu)}
   >
+    <div className="flex items-center">
+      <MoreHorizontal size={18} strokeWidth={1.5} />
+      <span className="ml-3 text-[14px] font-normal text-gray-900">
+        More
+      </span>
+    </div>
 
-    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
-      <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center">
-        <ImagePlus size={20} />
-      </div>
-      <span className="font-medium">Add photos & files</span>
-    </button>
+    <ChevronRight size={16} strokeWidth={1.5} />
+  </button>
 
-    <button className="group flex items-center justify-between w-full px-5 py-4 hover:bg-gray-50 transition">
-      <div className="flex items-center gap-4">
-        <div className="h-10 w-10 rounded-xl bg-purple-50 flex items-center justify-center">
-          <FolderOpen size={20} />
-        </div>
-        <span className="font-medium">Recent files</span>
-      </div>
-      <ChevronRight size={18} />
-    </button>
+  {showMoreMenu && (
+    <div
+     className="
+absolute
+left-0
+bottom-full
+mb-10
+w-67.5
+bg-white
+rounded-2xl
+border
+border-gray-200
+shadow-xl
+z-[9999]
+overflow-hidden
+"
+    >
 
-    <div className="mx-4 border-t border-gray-100" />
+      <button className="flex items-center w-full px-4 py-3 hover:bg-gray-50">
+        <FileText size={18} />
+        <span className="ml-3 text-[14px]">Documents</span>
+      </button>
 
-    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
-      <div className="h-10 w-10 rounded-xl bg-pink-50 flex items-center justify-center">
-        <Sparkles size={20} />
-      </div>
-      <span className="font-medium">Create image</span>
-    </button>
+      <button className="flex items-center w-full px-4 py-3 hover:bg-gray-50">
+        <Video size={18} />
+        <span className="ml-3 text-[14px]">Videos</span>
+      </button>
 
-    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
-      <div className="h-10 w-10 rounded-xl bg-yellow-50 flex items-center justify-center">
-        <Brain size={20} />
-      </div>
-      <span className="font-medium">Thinking Mode</span>
-    </button>
+      <button className="flex items-center w-full px-4 py-3 hover:bg-gray-50">
+        <Music size={18} />
+        <span className="ml-3 text-[14px]">Audio</span>
+      </button>
 
-    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
-      <div className="h-10 w-10 rounded-xl bg-green-50 flex items-center justify-center">
-        <Compass size={20} />
-      </div>
-      <span className="font-medium">Deep Research</span>
-    </button>
+      <button className="flex items-center w-full px-4 py-3 hover:bg-gray-50">
+        <Code2 size={18} />
+        <span className="ml-3 text-[14px]">Code</span>
+      </button>
 
-    <button className="group flex items-center gap-4 w-full px-5 py-4 hover:bg-gray-50 transition">
-      <div className="h-10 w-10 rounded-xl bg-cyan-50 flex items-center justify-center">
-        <Globe2 size={20} />
-      </div>
-      <span className="font-medium">Web Search</span>
-    </button>
+      <button className="flex items-center w-full px-4 py-3 hover:bg-gray-50">
+        <FolderKanban size={18} />
+        <span className="ml-3 text-[14px]">Templates</span>
+      </button>
 
+      <button className="flex items-center w-full px-4 py-3 hover:bg-gray-50">
+        <Palette size={18} />
+        <span className="ml-3 text-[14px]">AI Tools</span>
+      </button>
+
+    </div>
+  )}
+
+</div>
   </div>
 )}
 
   </div>
-</label>
+ </div>
 <input
   value={prompt}
   onChange={(e) => setPrompt(e.target.value)}
