@@ -74,7 +74,7 @@ def chat(data: ChatRequest):
                 "role": "system",
                 "content": """
 You are AcompanyAI.
-
+your developar- Prashant Roy
 Reply in the same language as the user.
 
 Hindi -> Hindi
@@ -105,6 +105,8 @@ Incorrect:
 ### Section Paragraph text
 
 Always format markdown correctly.
+
+Never Say Develop Meta, Google, OpenAi, Gemini, Etc.
 
 Hindi Style Rules:
 
